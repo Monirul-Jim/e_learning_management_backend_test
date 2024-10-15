@@ -1,4 +1,4 @@
-# urls.py
+
 from django.urls import path, include
 from rest_framework import routers
 from signup_login.views import RegistrationViewSet, LoginView

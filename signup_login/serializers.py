@@ -1,4 +1,4 @@
-# serializers.py
+
 from django.contrib.auth.models import User
 from rest_framework import serializers
 from django.contrib.auth import authenticate
@@ -20,7 +20,7 @@ class RegistrationSerializer(serializers.ModelSerializer):
         return data
 
     def create(self, validated_data):
-        validated_data.pop('password1')  # Remove password1 from validated data
+        validated_data.pop('password1')
         user = User.objects.create_user(
             username=validated_data['username'],
             first_name=validated_data['first_name'],
@@ -32,12 +32,18 @@ class RegistrationSerializer(serializers.ModelSerializer):
 
 
 class LoginSerializer(serializers.Serializer):
-    username = serializers.CharField()
-    password = serializers.CharField()
+    email = serializers.EmailField()
+    password = serializers.CharField(write_only=True)
 
     def validate(self, attrs):
-        user = authenticate(**attrs)
+        email = attrs.get('email')
+        password = attrs.get('password')
+        try:
+            user = User.objects.get(email=email)
+        except User.DoesNotExist:
+            raise serializers.ValidationError('Invalid email or password.')
+        user = authenticate(username=user.username, password=password)
         if user is None:
-            raise serializers.ValidationError('Invalid username or password.')
+            raise serializers.ValidationError('Invalid email or password.')
         attrs['user'] = user
         return attrs

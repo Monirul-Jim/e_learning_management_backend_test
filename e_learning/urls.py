@@ -23,6 +23,4 @@ urlpatterns = [
     path('learning/', include('learning.urls')),
     path('sign-login/', include('signup_login.urls'))
 ]
-
-# Custom 404 handler
 handler404 = 'learning.views.api_not_found'
