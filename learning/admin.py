@@ -1,5 +1,5 @@
 from django.contrib import admin
-from learning.models import CategoryModel
+from learning.models import CategoryModel, CourseModel
 
 
 class CategoryModelAdmin(admin.ModelAdmin):
@@ -7,3 +7,4 @@ class CategoryModelAdmin(admin.ModelAdmin):
 
 
 admin.site.register(CategoryModel, CategoryModelAdmin)
+admin.site.register(CourseModel)

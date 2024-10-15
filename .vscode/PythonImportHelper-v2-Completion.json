@@ -25,6 +25,22 @@
         "documentation": {}
     },
     {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
         "label": "admin",
         "importPath": "django.contrib",
         "description": "django.contrib",
@@ -70,6 +86,46 @@
         "description": "django.urls",
         "isExtraImport": true,
         "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "api_not_found",
+        "importPath": "learning.views",
+        "description": "learning.views",
+        "isExtraImport": true,
+        "detail": "learning.views",
+        "documentation": {}
+    },
+    {
+        "label": "CategoryViewSets",
+        "importPath": "learning.views",
+        "description": "learning.views",
+        "isExtraImport": true,
+        "detail": "learning.views",
+        "documentation": {}
+    },
+    {
+        "label": "CourseViewSets",
+        "importPath": "learning.views",
+        "description": "learning.views",
+        "isExtraImport": true,
+        "detail": "learning.views",
         "documentation": {}
     },
     {
@@ -137,6 +193,54 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -162,7 +266,7 @@
         "documentation": {}
     },
     {
-        "label": "CategoryModel",
+        "label": "CourseModel",
         "importPath": "learning.models",
         "description": "learning.models",
         "isExtraImport": true,
@@ -171,6 +275,30 @@
     },
     {
         "label": "CategoryModel",
+        "importPath": "learning.models",
+        "description": "learning.models",
+        "isExtraImport": true,
+        "detail": "learning.models",
+        "documentation": {}
+    },
+    {
+        "label": "CourseModel",
+        "importPath": "learning.models",
+        "description": "learning.models",
+        "isExtraImport": true,
+        "detail": "learning.models",
+        "documentation": {}
+    },
+    {
+        "label": "CategoryModel",
+        "importPath": "learning.models",
+        "description": "learning.models",
+        "isExtraImport": true,
+        "detail": "learning.models",
+        "documentation": {}
+    },
+    {
+        "label": "CourseModel",
         "importPath": "learning.models",
         "description": "learning.models",
         "isExtraImport": true,
@@ -186,11 +314,59 @@
         "documentation": {}
     },
     {
-        "label": "slugify",
-        "importPath": "django.utils.text",
-        "description": "django.utils.text",
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
         "isExtraImport": true,
-        "detail": "django.utils.text",
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "exception_handler",
+        "importPath": "rest_framework.views",
+        "description": "rest_framework.views",
+        "isExtraImport": true,
+        "detail": "rest_framework.views",
+        "documentation": {}
+    },
+    {
+        "label": "APIView",
+        "importPath": "rest_framework.views",
+        "description": "rest_framework.views",
+        "isExtraImport": true,
+        "detail": "rest_framework.views",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
         "documentation": {}
     },
     {
@@ -218,6 +394,54 @@
         "documentation": {}
     },
     {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "routers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "viewsets",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "slugify",
+        "importPath": "django.utils.text",
+        "description": "django.utils.text",
+        "isExtraImport": true,
+        "detail": "django.utils.text",
+        "documentation": {}
+    },
+    {
         "label": "TestCase",
         "importPath": "django.test",
         "description": "django.test",
@@ -226,11 +450,27 @@
         "documentation": {}
     },
     {
-        "label": "CategoryViewSets",
-        "importPath": "learning.views",
-        "description": "learning.views",
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
         "isExtraImport": true,
-        "detail": "learning.views",
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "JsonResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "JsonResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
         "documentation": {}
     },
     {
@@ -239,6 +479,86 @@
         "description": "learning.serializers",
         "isExtraImport": true,
         "detail": "learning.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "CourseSerializer",
+        "importPath": "learning.serializers",
+        "description": "learning.serializers",
+        "isExtraImport": true,
+        "detail": "learning.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "send_response",
+        "importPath": "learning.utils",
+        "description": "learning.utils",
+        "isExtraImport": true,
+        "detail": "learning.utils",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "authenticate",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "RegistrationViewSet",
+        "importPath": "signup_login.views",
+        "description": "signup_login.views",
+        "isExtraImport": true,
+        "detail": "signup_login.views",
+        "documentation": {}
+    },
+    {
+        "label": "LoginView",
+        "importPath": "signup_login.views",
+        "description": "signup_login.views",
+        "isExtraImport": true,
+        "detail": "signup_login.views",
+        "documentation": {}
+    },
+    {
+        "label": "TokenRefreshView",
+        "importPath": "rest_framework_simplejwt.views",
+        "description": "rest_framework_simplejwt.views",
+        "isExtraImport": true,
+        "detail": "rest_framework_simplejwt.views",
+        "documentation": {}
+    },
+    {
+        "label": "AllowAny",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "RefreshToken",
+        "importPath": "rest_framework_simplejwt.tokens",
+        "description": "rest_framework_simplejwt.tokens",
+        "isExtraImport": true,
+        "detail": "rest_framework_simplejwt.tokens",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "django.utils",
+        "description": "django.utils",
+        "isExtraImport": true,
+        "detail": "django.utils",
         "documentation": {}
     },
     {
@@ -300,7 +620,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rest_framework',\n    'learning',\n]",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rest_framework',\n    'rest_framework.authtoken',\n    'rest_framework_simplejwt',",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -363,7 +683,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\nREST_FRAMEWORK = {\n    'DEFAULT_PERMISSION_CLASSES': [\n        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'\n    ]\n}\n# Static files (CSS, JavaScript, Images)",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',  # Only for authentication\n    ),",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -372,7 +692,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\nREST_FRAMEWORK = {\n    'DEFAULT_PERMISSION_CLASSES': [\n        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'\n    ]\n}\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.1/howto/static-files/",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',  # Only for authentication\n    ),\n    'DEFAULT_PERMISSION_CLASSES': (",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -381,7 +701,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\nREST_FRAMEWORK = {\n    'DEFAULT_PERMISSION_CLASSES': [\n        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'\n    ]\n}\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.1/howto/static-files/\nSTATIC_URL = 'static/'",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',  # Only for authentication\n    ),\n    'DEFAULT_PERMISSION_CLASSES': (\n        # Allow access by default; customize as needed",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -390,7 +710,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "USE_TZ = True\nREST_FRAMEWORK = {\n    'DEFAULT_PERMISSION_CLASSES': [\n        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'\n    ]\n}\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.1/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type",
+        "peekOfCode": "USE_TZ = True\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',  # Only for authentication\n    ),\n    'DEFAULT_PERMISSION_CLASSES': (\n        # Allow access by default; customize as needed\n        'rest_framework.permissions.AllowAny',",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -399,7 +719,16 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "REST_FRAMEWORK = {\n    'DEFAULT_PERMISSION_CLASSES': [\n        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'\n    ]\n}\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.1/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field",
+        "peekOfCode": "REST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',  # Only for authentication\n    ),\n    'DEFAULT_PERMISSION_CLASSES': (\n        # Allow access by default; customize as needed\n        'rest_framework.permissions.AllowAny',\n    ),\n}",
+        "detail": "e_learning.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SIMPLE_JWT",
+        "kind": 5,
+        "importPath": "e_learning.settings",
+        "description": "e_learning.settings",
+        "peekOfCode": "SIMPLE_JWT = {\n    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=5),\n    'REFRESH_TOKEN_LIFETIME': timedelta(days=1),\n    'ROTATE_REFRESH_TOKENS': True,\n    'BLACKLIST_AFTER_ROTATION': True,\n    'ALGORITHM': 'HS256',\n    'SIGNING_KEY': SECRET_KEY,\n    'AUTH_HEADER_TYPES': ('Bearer',),\n    'USER_ID_FIELD': 'id',\n    'USER_ID_CLAIM': 'user_id',",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -426,7 +755,16 @@
         "kind": 5,
         "importPath": "e_learning.urls",
         "description": "e_learning.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('learning/', include('learning.urls'))\n]",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('learning/', include('learning.urls')),\n    path('sign-login/', include('signup_login.urls'))\n]\n# Custom 404 handler\nhandler404 = 'learning.views.api_not_found'",
+        "detail": "e_learning.urls",
+        "documentation": {}
+    },
+    {
+        "label": "handler404",
+        "kind": 5,
+        "importPath": "e_learning.urls",
+        "description": "e_learning.urls",
+        "peekOfCode": "handler404 = 'learning.views.api_not_found'",
         "detail": "e_learning.urls",
         "documentation": {}
     },
@@ -476,11 +814,38 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "learning.migrations.0005_rename_learningmodel_coursemodel",
+        "description": "learning.migrations.0005_rename_learningmodel_coursemodel",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('learning', '0004_learningmodel'),\n    ]\n    operations = [\n        migrations.RenameModel(\n            old_name='LearningModel',\n            new_name='CourseModel',\n        ),\n    ]",
+        "detail": "learning.migrations.0005_rename_learningmodel_coursemodel",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "learning.migrations.0006_alter_coursemodel_image",
+        "description": "learning.migrations.0006_alter_coursemodel_image",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('learning', '0005_rename_learningmodel_coursemodel'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='coursemodel',\n            name='image',\n            field=models.URLField(),\n        ),",
+        "detail": "learning.migrations.0006_alter_coursemodel_image",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "learning.migrations.0007_alter_coursemodel_image",
+        "description": "learning.migrations.0007_alter_coursemodel_image",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('learning', '0006_alter_coursemodel_image'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='coursemodel',\n            name='image',\n            field=models.URLField(max_length=500),\n        ),",
+        "detail": "learning.migrations.0007_alter_coursemodel_image",
+        "documentation": {}
+    },
+    {
         "label": "CategoryModelAdmin",
         "kind": 6,
         "importPath": "learning.admin",
         "description": "learning.admin",
-        "peekOfCode": "class CategoryModelAdmin(admin.ModelAdmin):\n    list_display = ('category', 'slug')  # Display slug in the admin panel\nadmin.site.register(CategoryModel, CategoryModelAdmin)",
+        "peekOfCode": "class CategoryModelAdmin(admin.ModelAdmin):\n    list_display = ('category', 'slug')  # Display slug in the admin panel\nadmin.site.register(CategoryModel, CategoryModelAdmin)\nadmin.site.register(CourseModel)",
         "detail": "learning.admin",
         "documentation": {}
     },
@@ -494,20 +859,29 @@
         "documentation": {}
     },
     {
+        "label": "custom_exception_handler",
+        "kind": 2,
+        "importPath": "learning.exceptions",
+        "description": "learning.exceptions",
+        "peekOfCode": "def custom_exception_handler(exc, context):\n    response = exception_handler(exc, context)\n    if response is not None:\n        response.data = {\n            'statusCode': response.status_code,\n            'success': False,\n            'message': response.data.get('detail', 'An error occurred'),\n            'error': response.data\n        }\n    else:",
+        "detail": "learning.exceptions",
+        "documentation": {}
+    },
+    {
         "label": "CategoryModel",
         "kind": 6,
         "importPath": "learning.models",
         "description": "learning.models",
-        "peekOfCode": "class CategoryModel(models.Model):\n    category = models.CharField(max_length=40)\n    slug = models.SlugField(max_length=50, unique=True, blank=True)\n    def save(self, *args, **kwargs):\n        if not self.slug:\n            self.slug = slugify(self.category).replace('-', '_')\n        super(CategoryModel, self).save(*args, **kwargs)\n    def __str__(self):\n        return self.category\nclass LearningModel(models.Model):",
+        "peekOfCode": "class CategoryModel(models.Model):\n    category = models.CharField(max_length=40)\n    slug = models.SlugField(max_length=50, unique=True, blank=True)\n    def save(self, *args, **kwargs):\n        if not self.slug:\n            self.slug = slugify(self.category).replace('-', '_')\n        super(CategoryModel, self).save(*args, **kwargs)\n    def __str__(self):\n        return self.category\nclass CourseModel(models.Model):",
         "detail": "learning.models",
         "documentation": {}
     },
     {
-        "label": "LearningModel",
+        "label": "CourseModel",
         "kind": 6,
         "importPath": "learning.models",
         "description": "learning.models",
-        "peekOfCode": "class LearningModel(models.Model):\n    image = models.ImageField(upload_to='learning/uploads')\n    title = models.CharField(max_length=100)\n    description = models.TextField()\n    category = models.OneToOneField(CategoryModel, on_delete=models.CASCADE)\n    def __str__(self):\n        return self.title",
+        "peekOfCode": "class CourseModel(models.Model):\n    image = models.URLField(max_length=500)\n    title = models.CharField(max_length=100)\n    description = models.TextField()\n    category = models.OneToOneField(CategoryModel, on_delete=models.CASCADE)\n    def __str__(self):\n        return self.title",
         "detail": "learning.models",
         "documentation": {}
     },
@@ -516,7 +890,16 @@
         "kind": 6,
         "importPath": "learning.serializers",
         "description": "learning.serializers",
-        "peekOfCode": "class CategorySerializers(serializers.ModelSerializer):\n    class Meta:\n        model = CategoryModel\n        fields = '__all__'",
+        "peekOfCode": "class CategorySerializers(serializers.ModelSerializer):\n    class Meta:\n        model = CategoryModel\n        fields = '__all__'\nclass CourseSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = CourseModel\n        fields = '__all__'",
+        "detail": "learning.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "CourseSerializer",
+        "kind": 6,
+        "importPath": "learning.serializers",
+        "description": "learning.serializers",
+        "peekOfCode": "class CourseSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = CourseModel\n        fields = '__all__'",
         "detail": "learning.serializers",
         "documentation": {}
     },
@@ -525,7 +908,7 @@
         "kind": 5,
         "importPath": "learning.urls",
         "description": "learning.urls",
-        "peekOfCode": "router = routers.DefaultRouter()\nrouter.register('category', CategoryViewSets)\nurlpatterns = [\n    path('', include(router.urls)),\n]",
+        "peekOfCode": "router = routers.DefaultRouter()\nrouter.register('category', CategoryViewSets)\nrouter.register('learning-video', CourseViewSets)\nurlpatterns = [\n    path('', include(router.urls)),\n]",
         "detail": "learning.urls",
         "documentation": {}
     },
@@ -539,12 +922,111 @@
         "documentation": {}
     },
     {
+        "label": "api_not_found",
+        "kind": 2,
+        "importPath": "learning.utils",
+        "description": "learning.utils",
+        "peekOfCode": "def api_not_found(request, exception=None):\n    return JsonResponse({\n        'statusCode': 404,\n        'success': False,\n        'message': 'API Not Found!!',\n        'error': ''\n    }, status=404)\ndef send_response(success, message, data=None, status_code=200):\n    return Response({\n        'statusCode': status_code,",
+        "detail": "learning.utils",
+        "documentation": {}
+    },
+    {
+        "label": "send_response",
+        "kind": 2,
+        "importPath": "learning.utils",
+        "description": "learning.utils",
+        "peekOfCode": "def send_response(success, message, data=None, status_code=200):\n    return Response({\n        'statusCode': status_code,\n        'success': success,\n        'message': message,\n        'data': data\n    }, status=status_code)",
+        "detail": "learning.utils",
+        "documentation": {}
+    },
+    {
         "label": "CategoryViewSets",
         "kind": 6,
         "importPath": "learning.views",
         "description": "learning.views",
-        "peekOfCode": "class CategoryViewSets(viewsets.ModelViewSet):\n    queryset = CategoryModel.objects.all()\n    serializer_class = CategorySerializers",
+        "peekOfCode": "class CategoryViewSets(viewsets.ModelViewSet):\n    queryset = CategoryModel.objects.all()\n    serializer_class = CategorySerializers\n    def create(self, request, *args, **kwargs):\n        serializer = self.get_serializer(data=request.data)\n        serializer.is_valid(raise_exception=True)\n        self.perform_create(serializer)\n        return send_response(\n            success=True,\n            message=\"Category created successfully\",",
         "detail": "learning.views",
+        "documentation": {}
+    },
+    {
+        "label": "CourseViewSets",
+        "kind": 6,
+        "importPath": "learning.views",
+        "description": "learning.views",
+        "peekOfCode": "class CourseViewSets(viewsets.ModelViewSet):\n    queryset = CourseModel.objects.all()\n    serializer_class = CourseSerializer\n    def create(self, request, *args, **kwargs):\n        serializer = self.get_serializer(data=request.data)\n        serializer.is_valid(raise_exception=True)\n        self.perform_create(serializer)\n        return send_response(\n            success=True,\n            message=\"Course created successfully\",",
+        "detail": "learning.views",
+        "documentation": {}
+    },
+    {
+        "label": "api_not_found",
+        "kind": 2,
+        "importPath": "learning.views",
+        "description": "learning.views",
+        "peekOfCode": "def api_not_found(request, exception=None):\n    return JsonResponse({\n        'statusCode': 404,\n        'success': False,\n        'message': 'API Not Found!!',\n        'error': ''\n    }, status=404)",
+        "detail": "learning.views",
+        "documentation": {}
+    },
+    {
+        "label": "SignupLoginConfig",
+        "kind": 6,
+        "importPath": "signup_login.apps",
+        "description": "signup_login.apps",
+        "peekOfCode": "class SignupLoginConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'signup_login'",
+        "detail": "signup_login.apps",
+        "documentation": {}
+    },
+    {
+        "label": "RegistrationSerializer",
+        "kind": 6,
+        "importPath": "signup_login.serializers",
+        "description": "signup_login.serializers",
+        "peekOfCode": "class RegistrationSerializer(serializers.ModelSerializer):\n    password = serializers.CharField(write_only=True)\n    password1 = serializers.CharField(write_only=True)\n    class Meta:\n        model = User\n        fields = ['username', 'first_name', 'last_name',\n                  'email', 'password', 'password1']\n    def validate(self, data):\n        if data['password'] != data['password1']:\n            raise serializers.ValidationError(",
+        "detail": "signup_login.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "LoginSerializer",
+        "kind": 6,
+        "importPath": "signup_login.serializers",
+        "description": "signup_login.serializers",
+        "peekOfCode": "class LoginSerializer(serializers.Serializer):\n    username = serializers.CharField()\n    password = serializers.CharField()\n    def validate(self, attrs):\n        user = authenticate(**attrs)\n        if user is None:\n            raise serializers.ValidationError('Invalid username or password.')\n        attrs['user'] = user\n        return attrs",
+        "detail": "signup_login.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "signup_login.urls",
+        "description": "signup_login.urls",
+        "peekOfCode": "router = routers.DefaultRouter()\nrouter.register('register', RegistrationViewSet,\n                basename='register')\nurlpatterns = [\n    path('', include(router.urls)),\n    path('login/', LoginView.as_view(), name='login'),\n    path('refresh/', TokenRefreshView.as_view(), name='token_refresh'),\n]",
+        "detail": "signup_login.urls",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "signup_login.urls",
+        "description": "signup_login.urls",
+        "peekOfCode": "urlpatterns = [\n    path('', include(router.urls)),\n    path('login/', LoginView.as_view(), name='login'),\n    path('refresh/', TokenRefreshView.as_view(), name='token_refresh'),\n]",
+        "detail": "signup_login.urls",
+        "documentation": {}
+    },
+    {
+        "label": "RegistrationViewSet",
+        "kind": 6,
+        "importPath": "signup_login.views",
+        "description": "signup_login.views",
+        "peekOfCode": "class RegistrationViewSet(viewsets.ViewSet):\n    queryset = []\n    permission_classes = [AllowAny]\n    def create(self, request):\n        serializer = RegistrationSerializer(data=request.data)\n        if serializer.is_valid():\n            serializer.save()\n            return Response({\"message\": \"User registered successfully.\"}, status=status.HTTP_201_CREATED)\n        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)\n# class LoginView(APIView):",
+        "detail": "signup_login.views",
+        "documentation": {}
+    },
+    {
+        "label": "LoginView",
+        "kind": 6,
+        "importPath": "signup_login.views",
+        "description": "signup_login.views",
+        "peekOfCode": "class LoginView(APIView):\n    def post(self, request):\n        serializer = LoginSerializer(data=request.data)\n        if serializer.is_valid():\n            user = serializer.validated_data['user']\n            # Manually update last_login\n            user.last_login = timezone.now()\n            user.save()\n            # Generate JWT tokens\n            refresh = RefreshToken.for_user(user)",
+        "detail": "signup_login.views",
         "documentation": {}
     },
     {

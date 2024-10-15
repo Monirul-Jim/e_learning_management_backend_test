@@ -15,8 +15,8 @@ class CategoryModel(models.Model):
         return self.category
 
 
-class LearningModel(models.Model):
-    image = models.ImageField(upload_to='learning/uploads')
+class CourseModel(models.Model):
+    image = models.URLField(max_length=500)
     title = models.CharField(max_length=100)
     description = models.TextField()
     category = models.OneToOneField(CategoryModel, on_delete=models.CASCADE)

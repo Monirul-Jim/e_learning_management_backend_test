@@ -16,8 +16,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from learning.views import api_not_found
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('learning/', include('learning.urls'))
+    path('learning/', include('learning.urls')),
+    path('sign-login/', include('signup_login.urls'))
 ]
+
+# Custom 404 handler
+handler404 = 'learning.views.api_not_found'
