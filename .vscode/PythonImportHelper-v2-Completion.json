@@ -265,6 +265,54 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -914,6 +962,33 @@
         "description": "learning.migrations.0009_remove_coursemodel_category_coursemodel_categories",
         "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('learning', '0008_coursemodel_price_alter_categorymodel_category'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='coursemodel',\n            name='category',\n        ),\n        migrations.AddField(",
         "detail": "learning.migrations.0009_remove_coursemodel_category_coursemodel_categories",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "learning.migrations.0010_remove_coursemodel_categories_and_more",
+        "description": "learning.migrations.0010_remove_coursemodel_categories_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('learning', '0009_remove_coursemodel_category_coursemodel_categories'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='coursemodel',\n            name='categories',\n        ),\n        migrations.AlterField(",
+        "detail": "learning.migrations.0010_remove_coursemodel_categories_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "learning.migrations.0011_coursemodel_category_alter_coursemodel_price",
+        "description": "learning.migrations.0011_coursemodel_category_alter_coursemodel_price",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('learning', '0010_remove_coursemodel_categories_and_more'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='coursemodel',\n            name='category',\n            field=models.OneToOneField(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, to='learning.categorymodel'),\n        ),",
+        "detail": "learning.migrations.0011_coursemodel_category_alter_coursemodel_price",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "learning.migrations.0012_remove_coursemodel_category_coursemodel_categories",
+        "description": "learning.migrations.0012_remove_coursemodel_category_coursemodel_categories",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('learning', '0011_coursemodel_category_alter_coursemodel_price'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='coursemodel',\n            name='category',\n        ),\n        migrations.AddField(",
+        "detail": "learning.migrations.0012_remove_coursemodel_category_coursemodel_categories",
         "documentation": {}
     },
     {

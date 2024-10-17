@@ -15,6 +15,8 @@ class CategorySerializers(serializers.ModelSerializer):
 #     class Meta:
 #         model = CourseModel
 #         fields = '__all__'
+
+
 class CourseSerializer(serializers.ModelSerializer):
     categories = serializers.PrimaryKeyRelatedField(
         many=True, queryset=CategoryModel.objects.all()
