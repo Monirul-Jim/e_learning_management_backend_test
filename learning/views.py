@@ -27,16 +27,16 @@ class CategoryViewSets(viewsets.ModelViewSet):
             status_code=status.HTTP_201_CREATED
         )
 
-        def list(self, request, *args, **kwargs):
-            # Get all courses
-            queryset = self.get_queryset()
-            serializer = self.get_serializer(queryset, many=True)
-            return send_response(
-                success=True,
-                message="Courses retrieved successfully",
-                data=serializer.data,
-                status_code=status.HTTP_200_OK
-            )
+    def list(self, request, *args, **kwargs):
+        # Get all categories
+        queryset = self.get_queryset()
+        serializer = self.get_serializer(queryset, many=True)
+        return send_response(
+            success=True,
+            message="Categories retrieved successfully",  # Updated the message to plural
+            data=serializer.data,
+            status_code=status.HTTP_200_OK
+        )
 
 
 class CourseViewSets(viewsets.ModelViewSet):

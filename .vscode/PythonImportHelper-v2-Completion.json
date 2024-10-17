@@ -442,6 +442,14 @@
         "documentation": {}
     },
     {
+        "label": "ValidationError",
+        "importPath": "django.core.exceptions",
+        "description": "django.core.exceptions",
+        "isExtraImport": true,
+        "detail": "django.core.exceptions",
+        "documentation": {}
+    },
+    {
         "label": "TestCase",
         "importPath": "django.test",
         "description": "django.test",
@@ -890,7 +898,7 @@
         "kind": 6,
         "importPath": "learning.models",
         "description": "learning.models",
-        "peekOfCode": "class CategoryModel(models.Model):\n    category = models.CharField(max_length=40)\n    slug = models.SlugField(max_length=50, unique=True, blank=True)\n    def save(self, *args, **kwargs):\n        if not self.slug:\n            self.slug = slugify(self.category).replace('-', '_')\n        super(CategoryModel, self).save(*args, **kwargs)\n    def __str__(self):\n        return self.category\nclass CourseModel(models.Model):",
+        "peekOfCode": "class CategoryModel(models.Model):\n    # Ensure category name is unique\n    category = models.CharField(max_length=40, unique=True)\n    slug = models.SlugField(max_length=50, unique=True, blank=True)\n    def save(self, *args, **kwargs):\n        if not self.slug:\n            self.slug = slugify(self.category).replace('-', '_')\n        super(CategoryModel, self).save(*args, **kwargs)\n    def clean(self):\n        if CategoryModel.objects.filter(category=self.category).exists():",
         "detail": "learning.models",
         "documentation": {}
     },
@@ -908,7 +916,7 @@
         "kind": 6,
         "importPath": "learning.serializers",
         "description": "learning.serializers",
-        "peekOfCode": "class CategorySerializers(serializers.ModelSerializer):\n    class Meta:\n        model = CategoryModel\n        fields = '__all__'\nclass CourseSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = CourseModel\n        fields = '__all__'",
+        "peekOfCode": "class CategorySerializers(serializers.ModelSerializer):\n    class Meta:\n        model = CategoryModel\n        fields = ['id', 'category']\nclass CourseSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = CourseModel\n        fields = '__all__'",
         "detail": "learning.serializers",
         "documentation": {}
     },
@@ -926,7 +934,7 @@
         "kind": 5,
         "importPath": "learning.urls",
         "description": "learning.urls",
-        "peekOfCode": "router = routers.DefaultRouter()\nrouter.register('category', CategoryViewSets)\nrouter.register('learning-video', CourseViewSets)\nurlpatterns = [\n    path('', include(router.urls)),\n]",
+        "peekOfCode": "router = routers.DefaultRouter()\nrouter.register('category', CategoryViewSets)\nrouter.register('courses', CourseViewSets)\nurlpatterns = [\n    path('', include(router.urls)),\n]",
         "detail": "learning.urls",
         "documentation": {}
     },
@@ -1043,7 +1051,7 @@
         "kind": 6,
         "importPath": "signup_login.views",
         "description": "signup_login.views",
-        "peekOfCode": "class LoginView(APIView):\n    def post(self, request):\n        serializer = LoginSerializer(data=request.data)\n        if serializer.is_valid():\n            user = serializer.validated_data['user']\n            user.last_login = timezone.now()\n            user.save()\n            refresh = RefreshToken.for_user(user)\n            access_token = refresh.access_token\n            response = Response({",
+        "peekOfCode": "class LoginView(APIView):\n    def post(self, request):\n        serializer = LoginSerializer(data=request.data)\n        if serializer.is_valid():\n            user = serializer.validated_data['user']\n            user.last_login = timezone.now()\n            user.save()\n            refresh = RefreshToken.for_user(user)\n            access_token = refresh.access_token\n            access_token['email'] = user.email",
         "detail": "signup_login.views",
         "documentation": {}
     },
