@@ -998,7 +998,7 @@
         "kind": 6,
         "importPath": "signup_login.serializers",
         "description": "signup_login.serializers",
-        "peekOfCode": "class RegistrationSerializer(serializers.ModelSerializer):\n    password = serializers.CharField(write_only=True)\n    password1 = serializers.CharField(write_only=True)\n    class Meta:\n        model = User\n        fields = ['username', 'first_name', 'last_name',\n                  'email', 'password', 'password1']\n    def validate(self, data):\n        if data['password'] != data['password1']:\n            raise serializers.ValidationError(",
+        "peekOfCode": "class RegistrationSerializer(serializers.ModelSerializer):\n    password = serializers.CharField(write_only=True)\n    password1 = serializers.CharField(write_only=True)\n    class Meta:\n        model = User\n        fields = ['username', 'first_name', 'last_name',\n                  'email', 'password', 'password1']\n    def validate(self, data):\n        # Check if the passwords match\n        if data['password'] != data['password1']:",
         "detail": "signup_login.serializers",
         "documentation": {}
     },
@@ -1007,7 +1007,7 @@
         "kind": 6,
         "importPath": "signup_login.serializers",
         "description": "signup_login.serializers",
-        "peekOfCode": "class LoginSerializer(serializers.Serializer):\n    email = serializers.EmailField()\n    password = serializers.CharField(write_only=True)\n    def validate(self, attrs):\n        email = attrs.get('email')\n        password = attrs.get('password')\n        try:\n            user = User.objects.get(email=email)\n        except User.DoesNotExist:\n            raise serializers.ValidationError('Invalid email or password.')",
+        "peekOfCode": "class LoginSerializer(serializers.Serializer):\n    email = serializers.EmailField()\n    password = serializers.CharField(write_only=True)\n    def validate(self, attrs):\n        email = attrs.get('email')\n        password = attrs.get('password')\n        try:\n            user = User.objects.get(email=email)\n        except User.DoesNotExist:\n            raise serializers.ValidationError(",
         "detail": "signup_login.serializers",
         "documentation": {}
     },

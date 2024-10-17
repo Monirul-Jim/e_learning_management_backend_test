@@ -14,13 +14,25 @@ class RegistrationSerializer(serializers.ModelSerializer):
                   'email', 'password', 'password1']
 
     def validate(self, data):
+        # Check if the passwords match
         if data['password'] != data['password1']:
             raise serializers.ValidationError(
-                {'password': 'Passwords do not match.'})
+                {'password1': 'Passwords do not match.'})
+
+        # Check if the username already exists
+        if User.objects.filter(username=data['username']).exists():
+            raise serializers.ValidationError(
+                {'username': 'Username is already taken.'})
+
+        # Check if the email is already in use
+        if User.objects.filter(email=data['email']).exists():
+            raise serializers.ValidationError(
+                {'email': 'Email is already registered.'})
+
         return data
 
     def create(self, validated_data):
-        validated_data.pop('password1')
+        validated_data.pop('password1')  # Remove the confirm password field
         user = User.objects.create_user(
             username=validated_data['username'],
             first_name=validated_data['first_name'],
@@ -31,6 +43,22 @@ class RegistrationSerializer(serializers.ModelSerializer):
         return user
 
 
+# class LoginSerializer(serializers.Serializer):
+#     email = serializers.EmailField()
+#     password = serializers.CharField(write_only=True)
+
+#     def validate(self, attrs):
+#         email = attrs.get('email')
+#         password = attrs.get('password')
+#         try:
+#             user = User.objects.get(email=email)
+#         except User.DoesNotExist:
+#             raise serializers.ValidationError('Invalid email or password.')
+#         user = authenticate(username=user.username, password=password)
+#         if user is None:
+#             raise serializers.ValidationError('Invalid email or password.')
+#         attrs['user'] = user
+#         return attrs
 class LoginSerializer(serializers.Serializer):
     email = serializers.EmailField()
     password = serializers.CharField(write_only=True)
@@ -41,9 +69,13 @@ class LoginSerializer(serializers.Serializer):
         try:
             user = User.objects.get(email=email)
         except User.DoesNotExist:
-            raise serializers.ValidationError('Invalid email or password.')
+            raise serializers.ValidationError(
+                {'email': 'Email does not exist.'})
+
         user = authenticate(username=user.username, password=password)
         if user is None:
-            raise serializers.ValidationError('Invalid email or password.')
+            raise serializers.ValidationError(
+                {'password': 'Invalid password.'})
+
         attrs['user'] = user
         return attrs
