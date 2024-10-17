@@ -233,6 +233,38 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -867,6 +899,24 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "learning.migrations.0008_coursemodel_price_alter_categorymodel_category",
+        "description": "learning.migrations.0008_coursemodel_price_alter_categorymodel_category",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('learning', '0007_alter_coursemodel_image'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='coursemodel',\n            name='price',\n            field=models.IntegerField(blank=True, null=True),\n        ),",
+        "detail": "learning.migrations.0008_coursemodel_price_alter_categorymodel_category",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "learning.migrations.0009_remove_coursemodel_category_coursemodel_categories",
+        "description": "learning.migrations.0009_remove_coursemodel_category_coursemodel_categories",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('learning', '0008_coursemodel_price_alter_categorymodel_category'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='coursemodel',\n            name='category',\n        ),\n        migrations.AddField(",
+        "detail": "learning.migrations.0009_remove_coursemodel_category_coursemodel_categories",
+        "documentation": {}
+    },
+    {
         "label": "CategoryModelAdmin",
         "kind": 6,
         "importPath": "learning.admin",
@@ -898,7 +948,7 @@
         "kind": 6,
         "importPath": "learning.models",
         "description": "learning.models",
-        "peekOfCode": "class CategoryModel(models.Model):\n    # Ensure category name is unique\n    category = models.CharField(max_length=40, unique=True)\n    slug = models.SlugField(max_length=50, unique=True, blank=True)\n    def save(self, *args, **kwargs):\n        if not self.slug:\n            self.slug = slugify(self.category).replace('-', '_')\n        super(CategoryModel, self).save(*args, **kwargs)\n    def clean(self):\n        if CategoryModel.objects.filter(category=self.category).exists():",
+        "peekOfCode": "class CategoryModel(models.Model):\n    category = models.CharField(max_length=40, unique=True)\n    slug = models.SlugField(max_length=50, unique=True, blank=True)\n    def save(self, *args, **kwargs):\n        if not self.slug:\n            self.slug = slugify(self.category).replace('-', '_')\n        super(CategoryModel, self).save(*args, **kwargs)\n    def clean(self):\n        if CategoryModel.objects.filter(category=self.category).exists():\n            raise ValidationError(",
         "detail": "learning.models",
         "documentation": {}
     },
@@ -907,7 +957,7 @@
         "kind": 6,
         "importPath": "learning.models",
         "description": "learning.models",
-        "peekOfCode": "class CourseModel(models.Model):\n    image = models.URLField(max_length=500)\n    title = models.CharField(max_length=100)\n    description = models.TextField()\n    category = models.OneToOneField(CategoryModel, on_delete=models.CASCADE)\n    def __str__(self):\n        return self.title",
+        "peekOfCode": "class CourseModel(models.Model):\n    image = models.URLField(max_length=500)\n    title = models.CharField(max_length=100)\n    description = models.TextField()\n    price = models.IntegerField(blank=True, null=True)\n    categories = models.ManyToManyField('CategoryModel')\n    def clean(self):\n        if self.price is not None and self.price < 0:\n            raise ValidationError({'price': \"Price cannot be negative.\"})\n    def __str__(self):",
         "detail": "learning.models",
         "documentation": {}
     },
@@ -916,7 +966,7 @@
         "kind": 6,
         "importPath": "learning.serializers",
         "description": "learning.serializers",
-        "peekOfCode": "class CategorySerializers(serializers.ModelSerializer):\n    class Meta:\n        model = CategoryModel\n        fields = ['id', 'category']\nclass CourseSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = CourseModel\n        fields = '__all__'",
+        "peekOfCode": "class CategorySerializers(serializers.ModelSerializer):\n    class Meta:\n        model = CategoryModel\n        fields = ['id', 'category']\n# class CourseSerializer(serializers.ModelSerializer):\n#     categories = CategorySerializers(many=True)\n#     # categories = serializers.StringRelatedField(many=True)\n#     class Meta:\n#         model = CourseModel\n#         fields = '__all__'",
         "detail": "learning.serializers",
         "documentation": {}
     },
@@ -925,7 +975,7 @@
         "kind": 6,
         "importPath": "learning.serializers",
         "description": "learning.serializers",
-        "peekOfCode": "class CourseSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = CourseModel\n        fields = '__all__'",
+        "peekOfCode": "class CourseSerializer(serializers.ModelSerializer):\n    categories = serializers.PrimaryKeyRelatedField(\n        many=True, queryset=CategoryModel.objects.all()\n    )\n    category_details = CategorySerializers(\n        many=True, read_only=True, source='categories')\n    class Meta:\n        model = CourseModel\n        fields = ['id', 'image', 'title', 'description',\n                  'price', 'categories', 'category_details']",
         "detail": "learning.serializers",
         "documentation": {}
     },
