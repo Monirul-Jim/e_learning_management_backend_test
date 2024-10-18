@@ -122,7 +122,8 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 
 USE_TZ = True
-
+# SSL_COMMERZ_STORE_ID = 'hero67125262bd471'
+# SSL_COMMERZ_STORE_PASSWORD = 'hero67125262bd471@ssl'
 # settings.py
 REST_FRAMEWORK = {
     'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',

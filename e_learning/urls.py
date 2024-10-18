@@ -21,6 +21,6 @@ from learning.views import api_not_found
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('learning/', include('learning.urls')),
-    path('sign-login/', include('signup_login.urls'))
+    path('sign-login/', include('signup_login.urls')),
 ]
 handler404 = 'learning.views.api_not_found'

@@ -32,6 +32,7 @@ class LoginView(APIView):
             access_token['email'] = user.email
             access_token['first_name'] = user.first_name
             access_token['last_name'] = user.last_name
+            access_token['is_superuser'] = user.is_superuser
             response = Response({
                 "message": "User login successfully",
                 "success": True,

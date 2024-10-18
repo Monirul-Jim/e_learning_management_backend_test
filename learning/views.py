@@ -66,7 +66,6 @@ class CourseViewSets(viewsets.ModelViewSet):
             status_code=status.HTTP_200_OK
         )
 
-
 def api_not_found(request, exception=None):
     return JsonResponse({
         'statusCode': 404,

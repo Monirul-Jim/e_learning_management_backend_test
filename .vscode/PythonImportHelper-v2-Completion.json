@@ -780,7 +780,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "CORS_ALLOW_CREDENTIALS = True\n# Internationalization\n# https://docs.djangoproject.com/en/5.1/topics/i18n/\nLANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',",
+        "peekOfCode": "CORS_ALLOW_CREDENTIALS = True\n# Internationalization\n# https://docs.djangoproject.com/en/5.1/topics/i18n/\nLANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# SSL_COMMERZ_STORE_ID = 'hero67125262bd471'\n# SSL_COMMERZ_STORE_PASSWORD = 'hero67125262bd471@ssl'\n# settings.py",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -789,7 +789,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',  # Only for authentication\n    ),",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# SSL_COMMERZ_STORE_ID = 'hero67125262bd471'\n# SSL_COMMERZ_STORE_PASSWORD = 'hero67125262bd471@ssl'\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -798,7 +798,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',  # Only for authentication\n    ),\n    'DEFAULT_PERMISSION_CLASSES': (",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# SSL_COMMERZ_STORE_ID = 'hero67125262bd471'\n# SSL_COMMERZ_STORE_PASSWORD = 'hero67125262bd471@ssl'\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',  # Only for authentication",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -807,7 +807,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',  # Only for authentication\n    ),\n    'DEFAULT_PERMISSION_CLASSES': (\n        # Allow access by default; customize as needed",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# SSL_COMMERZ_STORE_ID = 'hero67125262bd471'\n# SSL_COMMERZ_STORE_PASSWORD = 'hero67125262bd471@ssl'\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',  # Only for authentication\n    ),",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -816,7 +816,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "USE_TZ = True\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',  # Only for authentication\n    ),\n    'DEFAULT_PERMISSION_CLASSES': (\n        # Allow access by default; customize as needed\n        'rest_framework.permissions.AllowAny',",
+        "peekOfCode": "USE_TZ = True\n# SSL_COMMERZ_STORE_ID = 'hero67125262bd471'\n# SSL_COMMERZ_STORE_PASSWORD = 'hero67125262bd471@ssl'\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',  # Only for authentication\n    ),\n    'DEFAULT_PERMISSION_CLASSES': (",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -861,7 +861,7 @@
         "kind": 5,
         "importPath": "e_learning.urls",
         "description": "e_learning.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('learning/', include('learning.urls')),\n    path('sign-login/', include('signup_login.urls'))\n]\nhandler404 = 'learning.views.api_not_found'",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('learning/', include('learning.urls')),\n    path('sign-login/', include('signup_login.urls')),\n]\nhandler404 = 'learning.views.api_not_found'",
         "detail": "e_learning.urls",
         "documentation": {}
     },
@@ -1041,7 +1041,7 @@
         "kind": 6,
         "importPath": "learning.serializers",
         "description": "learning.serializers",
-        "peekOfCode": "class CategorySerializers(serializers.ModelSerializer):\n    class Meta:\n        model = CategoryModel\n        fields = ['id', 'category']\n# class CourseSerializer(serializers.ModelSerializer):\n#     categories = CategorySerializers(many=True)\n#     # categories = serializers.StringRelatedField(many=True)\n#     class Meta:\n#         model = CourseModel\n#         fields = '__all__'",
+        "peekOfCode": "class CategorySerializers(serializers.ModelSerializer):\n    class Meta:\n        model = CategoryModel\n        fields = ['id', 'category', 'slug']\n# class CourseSerializer(serializers.ModelSerializer):\n#     categories = CategorySerializers(many=True)\n#     # categories = serializers.StringRelatedField(many=True)\n#     class Meta:\n#         model = CourseModel\n#         fields = '__all__'",
         "detail": "learning.serializers",
         "documentation": {}
     },
