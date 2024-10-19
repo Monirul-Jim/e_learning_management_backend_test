@@ -127,8 +127,7 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 
 USE_TZ = True
-# SSL_COMMERZ_STORE_ID = 'hero67125262bd471'
-# SSL_COMMERZ_STORE_PASSWORD = 'hero67125262bd471@ssl'
+
 SITE_URL = 'http://localhost:5173'
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')
 # settings.py

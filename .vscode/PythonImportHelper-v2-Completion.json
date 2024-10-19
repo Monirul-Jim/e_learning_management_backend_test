@@ -1149,7 +1149,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "CORS_ALLOW_CREDENTIALS = True\n# Internationalization\n# https://docs.djangoproject.com/en/5.1/topics/i18n/\nLANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# SSL_COMMERZ_STORE_ID = 'hero67125262bd471'\n# SSL_COMMERZ_STORE_PASSWORD = 'hero67125262bd471@ssl'\nSITE_URL = 'http://localhost:5173'",
+        "peekOfCode": "CORS_ALLOW_CREDENTIALS = True\n# Internationalization\n# https://docs.djangoproject.com/en/5.1/topics/i18n/\nLANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\nSITE_URL = 'http://localhost:5173'\nSTRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')\n# settings.py",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -1158,7 +1158,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# SSL_COMMERZ_STORE_ID = 'hero67125262bd471'\n# SSL_COMMERZ_STORE_PASSWORD = 'hero67125262bd471@ssl'\nSITE_URL = 'http://localhost:5173'\nSTRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')\n# settings.py\nREST_FRAMEWORK = {",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\nSITE_URL = 'http://localhost:5173'\nSTRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -1167,7 +1167,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# SSL_COMMERZ_STORE_ID = 'hero67125262bd471'\n# SSL_COMMERZ_STORE_PASSWORD = 'hero67125262bd471@ssl'\nSITE_URL = 'http://localhost:5173'\nSTRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\nSITE_URL = 'http://localhost:5173'\nSTRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',  # Only for authentication",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -1176,7 +1176,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# SSL_COMMERZ_STORE_ID = 'hero67125262bd471'\n# SSL_COMMERZ_STORE_PASSWORD = 'hero67125262bd471@ssl'\nSITE_URL = 'http://localhost:5173'\nSTRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\nSITE_URL = 'http://localhost:5173'\nSTRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',  # Only for authentication\n    ),",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -1185,7 +1185,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "USE_TZ = True\n# SSL_COMMERZ_STORE_ID = 'hero67125262bd471'\n# SSL_COMMERZ_STORE_PASSWORD = 'hero67125262bd471@ssl'\nSITE_URL = 'http://localhost:5173'\nSTRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',  # Only for authentication",
+        "peekOfCode": "USE_TZ = True\nSITE_URL = 'http://localhost:5173'\nSTRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',  # Only for authentication\n    ),\n    'DEFAULT_PERMISSION_CLASSES': (",
         "detail": "e_learning.settings",
         "documentation": {}
     },
