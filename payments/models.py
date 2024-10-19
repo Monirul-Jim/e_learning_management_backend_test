@@ -1,15 +1,21 @@
 from django.db import models
+from django.contrib.auth.models import User
+from learning.models import CourseModel
 
 
-class Order(models.Model):
-    customer_email = models.EmailField(default='a@gmail.com')
-    # Assuming you want to keep this field
-    customer_name = models.CharField(max_length=255, default='a')
-    total_amount = models.DecimalField(
-        max_digits=10, decimal_places=2, default=0)
-    payment_intent = models.CharField(max_length=255, blank=True, null=True)
-    course_description = models.TextField(null=True, blank=True)
-    created_at = models.DateTimeField(auto_now_add=True)
+class PurchaseOrderModel(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    course = models.ForeignKey(CourseModel, on_delete=models.CASCADE)
+    total_amount = models.DecimalField(max_digits=10, decimal_places=2)
+    purchased_at = models.DateTimeField(auto_now_add=True)
+
+    # Optional fields
+    stripe_session_id = models.CharField(
+        max_length=255, blank=True, null=True)  # Track Stripe session
+    # Optional to group purchases
+    order_id = models.CharField(max_length=50, blank=True, null=True)
+    payment_status = models.CharField(
+        max_length=20, default='pending')  # Track payment status
 
     def __str__(self):
-        return f"Order by {self.customer_email} - ${self.total_amount:.2f}"
+        return f'{self.user.email} purchased {self.course.title} for {self.total_amount}'

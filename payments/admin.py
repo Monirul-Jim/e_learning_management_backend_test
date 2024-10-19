@@ -1,3 +1,3 @@
 from django.contrib import admin
-from payments.models import Order
-admin.site.register(Order)
+from payments.models import PurchaseOrderModel
+admin.site.register(PurchaseOrderModel)

@@ -121,6 +121,22 @@
         "documentation": {}
     },
     {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
         "label": "api_not_found",
         "importPath": "learning.views",
         "description": "learning.views",
@@ -425,6 +441,38 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -466,6 +514,30 @@
         "documentation": {}
     },
     {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "CategoryModel",
+        "importPath": "learning.models",
+        "description": "learning.models",
+        "isExtraImport": true,
+        "detail": "learning.models",
+        "documentation": {}
+    },
+    {
+        "label": "CourseModel",
+        "importPath": "learning.models",
+        "description": "learning.models",
+        "isExtraImport": true,
+        "detail": "learning.models",
+        "documentation": {}
+    },
+    {
         "label": "CategoryModel",
         "importPath": "learning.models",
         "description": "learning.models",
@@ -498,7 +570,15 @@
         "documentation": {}
     },
     {
-        "label": "CategoryModel",
+        "label": "CourseModel",
+        "importPath": "learning.models",
+        "description": "learning.models",
+        "isExtraImport": true,
+        "detail": "learning.models",
+        "documentation": {}
+    },
+    {
+        "label": "CourseModel",
         "importPath": "learning.models",
         "description": "learning.models",
         "isExtraImport": true,
@@ -634,6 +714,22 @@
         "documentation": {}
     },
     {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "viewsets",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
         "label": "status",
         "importPath": "rest_framework",
         "description": "rest_framework",
@@ -706,11 +802,27 @@
         "documentation": {}
     },
     {
-        "label": "TestCase",
-        "importPath": "django.test",
-        "description": "django.test",
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
         "isExtraImport": true,
-        "detail": "django.test",
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
         "documentation": {}
     },
     {
@@ -730,11 +842,11 @@
         "documentation": {}
     },
     {
-        "label": "JsonResponse",
-        "importPath": "django.http",
-        "description": "django.http",
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
         "isExtraImport": true,
-        "detail": "django.http",
+        "detail": "django.test",
         "documentation": {}
     },
     {
@@ -794,7 +906,7 @@
         "documentation": {}
     },
     {
-        "label": "Order",
+        "label": "PurchaseOrderModel",
         "importPath": "payments.models",
         "description": "payments.models",
         "isExtraImport": true,
@@ -802,11 +914,27 @@
         "documentation": {}
     },
     {
-        "label": "View",
-        "importPath": "django.views",
-        "description": "django.views",
+        "label": "PurchaseOrderModel",
+        "importPath": "payments.models",
+        "description": "payments.models",
         "isExtraImport": true,
-        "detail": "django.views",
+        "detail": "payments.models",
+        "documentation": {}
+    },
+    {
+        "label": "PurchaseOrderModel",
+        "importPath": "payments.models",
+        "description": "payments.models",
+        "isExtraImport": true,
+        "detail": "payments.models",
+        "documentation": {}
+    },
+    {
+        "label": "DefaultRouter",
+        "importPath": "rest_framework.routers",
+        "description": "rest_framework.routers",
+        "isExtraImport": true,
+        "detail": "rest_framework.routers",
         "documentation": {}
     },
     {
@@ -816,6 +944,14 @@
         "importPath": "stripe",
         "description": "stripe",
         "detail": "stripe",
+        "documentation": {}
+    },
+    {
+        "label": "PurchaseOrderSerializer",
+        "importPath": "payments.serializer",
+        "description": "payments.serializer",
+        "isExtraImport": true,
+        "detail": "payments.serializer",
         "documentation": {}
     },
     {
@@ -1415,6 +1551,24 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "payments.migrations.0003_purchaseordermodel_delete_order",
+        "description": "payments.migrations.0003_purchaseordermodel_delete_order",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('learning', '0016_remove_order_items_delete_cartitem_delete_order'),\n        ('payments', '0002_remove_order_amount_total_and_more'),\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='PurchaseOrderModel',\n            fields=[",
+        "detail": "payments.migrations.0003_purchaseordermodel_delete_order",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "payments.migrations.0004_purchaseordermodel_order_id_and_more",
+        "description": "payments.migrations.0004_purchaseordermodel_order_id_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('payments', '0003_purchaseordermodel_delete_order'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='purchaseordermodel',\n            name='order_id',\n            field=models.CharField(blank=True, max_length=50, null=True),\n        ),",
+        "detail": "payments.migrations.0004_purchaseordermodel_order_id_and_more",
+        "documentation": {}
+    },
+    {
         "label": "PaymentsConfig",
         "kind": 6,
         "importPath": "payments.apps",
@@ -1424,12 +1578,48 @@
         "documentation": {}
     },
     {
-        "label": "Order",
+        "label": "PurchaseOrderModel",
         "kind": 6,
         "importPath": "payments.models",
         "description": "payments.models",
-        "peekOfCode": "class Order(models.Model):\n    customer_email = models.EmailField(default='a@gmail.com')\n    # Assuming you want to keep this field\n    customer_name = models.CharField(max_length=255, default='a')\n    total_amount = models.DecimalField(\n        max_digits=10, decimal_places=2, default=0)\n    payment_intent = models.CharField(max_length=255, blank=True, null=True)\n    course_description = models.TextField(null=True, blank=True)\n    created_at = models.DateTimeField(auto_now_add=True)\n    def __str__(self):",
+        "peekOfCode": "class PurchaseOrderModel(models.Model):\n    user = models.ForeignKey(User, on_delete=models.CASCADE)\n    course = models.ForeignKey(CourseModel, on_delete=models.CASCADE)\n    total_amount = models.DecimalField(max_digits=10, decimal_places=2)\n    purchased_at = models.DateTimeField(auto_now_add=True)\n    # Optional fields\n    stripe_session_id = models.CharField(\n        max_length=255, blank=True, null=True)  # Track Stripe session\n    # Optional to group purchases\n    order_id = models.CharField(max_length=50, blank=True, null=True)",
         "detail": "payments.models",
+        "documentation": {}
+    },
+    {
+        "label": "UserSerializer",
+        "kind": 6,
+        "importPath": "payments.serializer",
+        "description": "payments.serializer",
+        "peekOfCode": "class UserSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = User\n        fields = ['id', 'email', 'first_name',\n                  'last_name']\nclass CourseSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = CourseModel\n        fields = ['id', 'title', 'description',\n                  'price']",
+        "detail": "payments.serializer",
+        "documentation": {}
+    },
+    {
+        "label": "CourseSerializer",
+        "kind": 6,
+        "importPath": "payments.serializer",
+        "description": "payments.serializer",
+        "peekOfCode": "class CourseSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = CourseModel\n        fields = ['id', 'title', 'description',\n                  'price']\nclass PurchaseOrderSerializer(serializers.ModelSerializer):\n    user = UserSerializer()\n    course = CourseSerializer()\n    class Meta:\n        model = PurchaseOrderModel",
+        "detail": "payments.serializer",
+        "documentation": {}
+    },
+    {
+        "label": "PurchaseOrderSerializer",
+        "kind": 6,
+        "importPath": "payments.serializer",
+        "description": "payments.serializer",
+        "peekOfCode": "class PurchaseOrderSerializer(serializers.ModelSerializer):\n    user = UserSerializer()\n    course = CourseSerializer()\n    class Meta:\n        model = PurchaseOrderModel\n        fields = ['id', 'total_amount', 'purchased_at', 'user', 'course',\n                  'payment_status']",
+        "detail": "payments.serializer",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "payments.urls",
+        "description": "payments.urls",
+        "peekOfCode": "router = DefaultRouter()\nrouter.register(r'orders', OrderCourseView, basename='order')\nurlpatterns = [\n    path('create-checkout-session/', StripeCheckoutView.as_view()),\n    path('', include(router.urls)),\n]",
+        "detail": "payments.urls",
         "documentation": {}
     },
     {
@@ -1437,7 +1627,7 @@
         "kind": 5,
         "importPath": "payments.urls",
         "description": "payments.urls",
-        "peekOfCode": "urlpatterns = [\n    path('create-checkout-session/', StripeCheckoutView.as_view()),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('create-checkout-session/', StripeCheckoutView.as_view()),\n    path('', include(router.urls)),\n]",
         "detail": "payments.urls",
         "documentation": {}
     },
@@ -1446,7 +1636,16 @@
         "kind": 6,
         "importPath": "payments.views",
         "description": "payments.views",
-        "peekOfCode": "class StripeCheckoutView(APIView):\n    def post(self, request):\n        try:\n            total_amount = request.data.get('totalAmount', 0)\n            total_amount_cents = int(float(total_amount) * 100)\n            checkout_session = stripe.checkout.Session.create(\n                payment_method_types=['card'],\n                line_items=[{\n                    'price_data': {\n                        'currency': 'usd',",
+        "peekOfCode": "class StripeCheckoutView(APIView):\n    def post(self, request):\n        try:\n            user_data = request.data.get('userData', {})\n            courses = request.data.get('courses', [])\n            total_amount = request.data.get('totalAmount', 0)\n            # Ensure that userData and courses are not empty\n            if not user_data or not courses:\n                return Response({'error': 'User data or courses missing'}, status=status.HTTP_400_BAD_REQUEST)\n            # Fetch or create the user",
+        "detail": "payments.views",
+        "documentation": {}
+    },
+    {
+        "label": "OrderCourseView",
+        "kind": 6,
+        "importPath": "payments.views",
+        "description": "payments.views",
+        "peekOfCode": "class OrderCourseView(viewsets.ModelViewSet):\n    queryset = PurchaseOrderModel.objects.all()\n    serializer_class = PurchaseOrderSerializer\n    def create(self, request, *args, **kwargs):\n        serializer = self.get_serializer(data=request.data)\n        if serializer.is_valid():\n            serializer.save()\n            return Response(serializer.data, status=status.HTTP_201_CREATED)\n        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)\n    def retrieve(self, request, *args, **kwargs):",
         "detail": "payments.views",
         "documentation": {}
     },
@@ -1455,7 +1654,7 @@
         "kind": 5,
         "importPath": "payments.views",
         "description": "payments.views",
-        "peekOfCode": "stripe.api_key = settings.STRIPE_SECRET_KEY\nclass StripeCheckoutView(APIView):\n    def post(self, request):\n        try:\n            total_amount = request.data.get('totalAmount', 0)\n            total_amount_cents = int(float(total_amount) * 100)\n            checkout_session = stripe.checkout.Session.create(\n                payment_method_types=['card'],\n                line_items=[{\n                    'price_data': {",
+        "peekOfCode": "stripe.api_key = settings.STRIPE_SECRET_KEY\n# class StripeCheckoutView(APIView):\n#     def post(self, request):\n#         try:\n#             total_amount = request.data.get('totalAmount', 0)\n#             total_amount_cents = int(float(total_amount) * 100)\n#             checkout_session = stripe.checkout.Session.create(\n#                 payment_method_types=['card'],\n#                 line_items=[{\n#                     'price_data': {",
         "detail": "payments.views",
         "documentation": {}
     },
