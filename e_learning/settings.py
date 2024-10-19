@@ -12,6 +12,9 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 
 from pathlib import Path
 from datetime import timedelta
+from dotenv import load_dotenv
+import os
+load_dotenv()
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -20,7 +23,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-jn9jjma3i7@p*9da)bdk_p*bc+#9cllup$+ve9_&27_&fl_v-_'
+SECRET_KEY = os.getenv('SECRET_KEY')
+print(SECRET_KEY)
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -126,7 +130,7 @@ USE_TZ = True
 # SSL_COMMERZ_STORE_ID = 'hero67125262bd471'
 # SSL_COMMERZ_STORE_PASSWORD = 'hero67125262bd471@ssl'
 SITE_URL = 'http://localhost:5173'
-STRIPE_SECRET_KEY = 'sk_test_51QBXEDDSQZoG1zomwS0em78tzuZenwAwXgqUcGGqK0kr47figabAjsBNrHIi3sK5h41oT2DXCVuXngFF1Xl1G09T00V97f3o0J'
+STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')
 # settings.py
 REST_FRAMEWORK = {
     'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',

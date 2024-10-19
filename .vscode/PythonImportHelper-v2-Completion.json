@@ -33,6 +33,14 @@
         "documentation": {}
     },
     {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
         "label": "admin",
         "importPath": "django.contrib",
         "description": "django.contrib",
@@ -1033,7 +1041,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-jn9jjma3i7@p*9da)bdk_p*bc+#9cllup$+ve9_&27_&fl_v-_'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = os.getenv('SECRET_KEY')\nprint(SECRET_KEY)\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -1042,7 +1050,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "SECRET_KEY = 'django-insecure-jn9jjma3i7@p*9da)bdk_p*bc+#9cllup$+ve9_&27_&fl_v-_'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
+        "peekOfCode": "SECRET_KEY = os.getenv('SECRET_KEY')\nprint(SECRET_KEY)\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -1150,7 +1158,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# SSL_COMMERZ_STORE_ID = 'hero67125262bd471'\n# SSL_COMMERZ_STORE_PASSWORD = 'hero67125262bd471@ssl'\nSITE_URL = 'http://localhost:5173'\nSTRIPE_SECRET_KEY = 'sk_test_51QBXEDDSQZoG1zomwS0em78tzuZenwAwXgqUcGGqK0kr47figabAjsBNrHIi3sK5h41oT2DXCVuXngFF1Xl1G09T00V97f3o0J'\n# settings.py\nREST_FRAMEWORK = {",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# SSL_COMMERZ_STORE_ID = 'hero67125262bd471'\n# SSL_COMMERZ_STORE_PASSWORD = 'hero67125262bd471@ssl'\nSITE_URL = 'http://localhost:5173'\nSTRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')\n# settings.py\nREST_FRAMEWORK = {",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -1159,7 +1167,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# SSL_COMMERZ_STORE_ID = 'hero67125262bd471'\n# SSL_COMMERZ_STORE_PASSWORD = 'hero67125262bd471@ssl'\nSITE_URL = 'http://localhost:5173'\nSTRIPE_SECRET_KEY = 'sk_test_51QBXEDDSQZoG1zomwS0em78tzuZenwAwXgqUcGGqK0kr47figabAjsBNrHIi3sK5h41oT2DXCVuXngFF1Xl1G09T00V97f3o0J'\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# SSL_COMMERZ_STORE_ID = 'hero67125262bd471'\n# SSL_COMMERZ_STORE_PASSWORD = 'hero67125262bd471@ssl'\nSITE_URL = 'http://localhost:5173'\nSTRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -1168,7 +1176,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# SSL_COMMERZ_STORE_ID = 'hero67125262bd471'\n# SSL_COMMERZ_STORE_PASSWORD = 'hero67125262bd471@ssl'\nSITE_URL = 'http://localhost:5173'\nSTRIPE_SECRET_KEY = 'sk_test_51QBXEDDSQZoG1zomwS0em78tzuZenwAwXgqUcGGqK0kr47figabAjsBNrHIi3sK5h41oT2DXCVuXngFF1Xl1G09T00V97f3o0J'\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# SSL_COMMERZ_STORE_ID = 'hero67125262bd471'\n# SSL_COMMERZ_STORE_PASSWORD = 'hero67125262bd471@ssl'\nSITE_URL = 'http://localhost:5173'\nSTRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -1177,7 +1185,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "USE_TZ = True\n# SSL_COMMERZ_STORE_ID = 'hero67125262bd471'\n# SSL_COMMERZ_STORE_PASSWORD = 'hero67125262bd471@ssl'\nSITE_URL = 'http://localhost:5173'\nSTRIPE_SECRET_KEY = 'sk_test_51QBXEDDSQZoG1zomwS0em78tzuZenwAwXgqUcGGqK0kr47figabAjsBNrHIi3sK5h41oT2DXCVuXngFF1Xl1G09T00V97f3o0J'\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',  # Only for authentication",
+        "peekOfCode": "USE_TZ = True\n# SSL_COMMERZ_STORE_ID = 'hero67125262bd471'\n# SSL_COMMERZ_STORE_PASSWORD = 'hero67125262bd471@ssl'\nSITE_URL = 'http://localhost:5173'\nSTRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',  # Only for authentication",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -1186,7 +1194,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "SITE_URL = 'http://localhost:5173'\nSTRIPE_SECRET_KEY = 'sk_test_51QBXEDDSQZoG1zomwS0em78tzuZenwAwXgqUcGGqK0kr47figabAjsBNrHIi3sK5h41oT2DXCVuXngFF1Xl1G09T00V97f3o0J'\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',  # Only for authentication\n    ),\n    'DEFAULT_PERMISSION_CLASSES': (\n        # Allow access by default; customize as needed",
+        "peekOfCode": "SITE_URL = 'http://localhost:5173'\nSTRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',  # Only for authentication\n    ),\n    'DEFAULT_PERMISSION_CLASSES': (\n        # Allow access by default; customize as needed",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -1195,7 +1203,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "STRIPE_SECRET_KEY = 'sk_test_51QBXEDDSQZoG1zomwS0em78tzuZenwAwXgqUcGGqK0kr47figabAjsBNrHIi3sK5h41oT2DXCVuXngFF1Xl1G09T00V97f3o0J'\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',  # Only for authentication\n    ),\n    'DEFAULT_PERMISSION_CLASSES': (\n        # Allow access by default; customize as needed\n        'rest_framework.permissions.AllowAny',",
+        "peekOfCode": "STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',  # Only for authentication\n    ),\n    'DEFAULT_PERMISSION_CLASSES': (\n        # Allow access by default; customize as needed\n        'rest_framework.permissions.AllowAny',",
         "detail": "e_learning.settings",
         "documentation": {}
     },
