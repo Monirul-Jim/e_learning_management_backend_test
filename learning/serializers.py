@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from learning.models import CategoryModel, CourseModel
+from learning.models import CategoryModel, CourseModel, ModuleModel, ParentModule, VideoModel
 
 
 class CategorySerializers(serializers.ModelSerializer):
@@ -33,3 +33,27 @@ class CourseSerializer(serializers.ModelSerializer):
         representation = super().to_representation(instance)
         representation.pop('categories')
         return representation
+
+
+class ParentModuleSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ParentModule
+        fields = ['id', 'title']
+
+
+class ModuleSerializer(serializers.ModelSerializer):
+    course = CourseSerializer(read_only=True)
+    parent_module = ParentModuleSerializer(read_only=True)
+
+    class Meta:
+        model = ModuleModel
+        fields = ['id', 'course', 'title',
+                  'parent_module', 'is_parent', 'description']
+
+
+class VideoSerializer(serializers.ModelSerializer):
+    module = ModuleSerializer(read_only=True)
+
+    class Meta:
+        model = VideoModel
+        fields = ['id', 'module', 'title', 'video_url', 'duration']

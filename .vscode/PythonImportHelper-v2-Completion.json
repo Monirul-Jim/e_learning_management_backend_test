@@ -169,6 +169,30 @@
         "documentation": {}
     },
     {
+        "label": "ModuleViewSets",
+        "importPath": "learning.views",
+        "description": "learning.views",
+        "isExtraImport": true,
+        "detail": "learning.views",
+        "documentation": {}
+    },
+    {
+        "label": "ParentModuleViewSets",
+        "importPath": "learning.views",
+        "description": "learning.views",
+        "isExtraImport": true,
+        "detail": "learning.views",
+        "documentation": {}
+    },
+    {
+        "label": "VideoViewSets",
+        "importPath": "learning.views",
+        "description": "learning.views",
+        "isExtraImport": true,
+        "detail": "learning.views",
+        "documentation": {}
+    },
+    {
         "label": "get_wsgi_application",
         "importPath": "django.core.wsgi",
         "description": "django.core.wsgi",
@@ -409,6 +433,46 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -530,19 +594,11 @@
         "documentation": {}
     },
     {
-        "label": "CategoryModel",
-        "importPath": "learning.models",
-        "description": "learning.models",
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
         "isExtraImport": true,
-        "detail": "learning.models",
-        "documentation": {}
-    },
-    {
-        "label": "CourseModel",
-        "importPath": "learning.models",
-        "description": "learning.models",
-        "isExtraImport": true,
-        "detail": "learning.models",
+        "detail": "django.conf",
         "documentation": {}
     },
     {
@@ -562,6 +618,46 @@
         "documentation": {}
     },
     {
+        "label": "ModuleModel",
+        "importPath": "learning.models",
+        "description": "learning.models",
+        "isExtraImport": true,
+        "detail": "learning.models",
+        "documentation": {}
+    },
+    {
+        "label": "VideoModel",
+        "importPath": "learning.models",
+        "description": "learning.models",
+        "isExtraImport": true,
+        "detail": "learning.models",
+        "documentation": {}
+    },
+    {
+        "label": "ParentModule\r\n                             #  QuizModel",
+        "importPath": "learning.models",
+        "description": "learning.models",
+        "isExtraImport": true,
+        "detail": "learning.models",
+        "documentation": {}
+    },
+    {
+        "label": "#  ExamModel",
+        "importPath": "learning.models",
+        "description": "learning.models",
+        "isExtraImport": true,
+        "detail": "learning.models",
+        "documentation": {}
+    },
+    {
+        "label": "#  AnswerModel",
+        "importPath": "learning.models",
+        "description": "learning.models",
+        "isExtraImport": true,
+        "detail": "learning.models",
+        "documentation": {}
+    },
+    {
         "label": "CategoryModel",
         "importPath": "learning.models",
         "description": "learning.models",
@@ -571,6 +667,70 @@
     },
     {
         "label": "CourseModel",
+        "importPath": "learning.models",
+        "description": "learning.models",
+        "isExtraImport": true,
+        "detail": "learning.models",
+        "documentation": {}
+    },
+    {
+        "label": "ModuleModel",
+        "importPath": "learning.models",
+        "description": "learning.models",
+        "isExtraImport": true,
+        "detail": "learning.models",
+        "documentation": {}
+    },
+    {
+        "label": "ParentModule",
+        "importPath": "learning.models",
+        "description": "learning.models",
+        "isExtraImport": true,
+        "detail": "learning.models",
+        "documentation": {}
+    },
+    {
+        "label": "VideoModel",
+        "importPath": "learning.models",
+        "description": "learning.models",
+        "isExtraImport": true,
+        "detail": "learning.models",
+        "documentation": {}
+    },
+    {
+        "label": "CategoryModel",
+        "importPath": "learning.models",
+        "description": "learning.models",
+        "isExtraImport": true,
+        "detail": "learning.models",
+        "documentation": {}
+    },
+    {
+        "label": "CourseModel",
+        "importPath": "learning.models",
+        "description": "learning.models",
+        "isExtraImport": true,
+        "detail": "learning.models",
+        "documentation": {}
+    },
+    {
+        "label": "ModuleModel",
+        "importPath": "learning.models",
+        "description": "learning.models",
+        "isExtraImport": true,
+        "detail": "learning.models",
+        "documentation": {}
+    },
+    {
+        "label": "ParentModule",
+        "importPath": "learning.models",
+        "description": "learning.models",
+        "isExtraImport": true,
+        "detail": "learning.models",
+        "documentation": {}
+    },
+    {
+        "label": "VideoModel",
         "importPath": "learning.models",
         "description": "learning.models",
         "isExtraImport": true,
@@ -906,6 +1066,30 @@
         "documentation": {}
     },
     {
+        "label": "ModuleSerializer",
+        "importPath": "learning.serializers",
+        "description": "learning.serializers",
+        "isExtraImport": true,
+        "detail": "learning.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "ParentModuleSerializer",
+        "importPath": "learning.serializers",
+        "description": "learning.serializers",
+        "isExtraImport": true,
+        "detail": "learning.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "VideoSerializer",
+        "importPath": "learning.serializers",
+        "description": "learning.serializers",
+        "isExtraImport": true,
+        "detail": "learning.serializers",
+        "documentation": {}
+    },
+    {
         "label": "send_response",
         "importPath": "learning.utils",
         "description": "learning.utils",
@@ -1041,7 +1225,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = os.getenv('SECRET_KEY')\nprint(SECRET_KEY)\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = os.getenv('SECRET_KEY')\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -1050,7 +1234,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "SECRET_KEY = os.getenv('SECRET_KEY')\nprint(SECRET_KEY)\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',",
+        "peekOfCode": "SECRET_KEY = os.getenv('SECRET_KEY')\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -1415,11 +1599,56 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "learning.migrations.0017_exammodel_answermodel_modulemodel_exammodel_module_and_more",
+        "description": "learning.migrations.0017_exammodel_answermodel_modulemodel_exammodel_module_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('learning', '0016_remove_order_items_delete_cartitem_delete_order'),\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='ExamModel',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
+        "detail": "learning.migrations.0017_exammodel_answermodel_modulemodel_exammodel_module_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "learning.migrations.0018_parentmodule_alter_modulemodel_parent_module",
+        "description": "learning.migrations.0018_parentmodule_alter_modulemodel_parent_module",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('learning', '0017_exammodel_answermodel_modulemodel_exammodel_module_and_more'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='ParentModule',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('title', models.CharField(max_length=300)),",
+        "detail": "learning.migrations.0018_parentmodule_alter_modulemodel_parent_module",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "learning.migrations.0019_remove_exammodel_module_remove_quizmodel_module_and_more",
+        "description": "learning.migrations.0019_remove_exammodel_module_remove_quizmodel_module_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('learning', '0018_parentmodule_alter_modulemodel_parent_module'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='exammodel',\n            name='module',\n        ),\n        migrations.RemoveField(",
+        "detail": "learning.migrations.0019_remove_exammodel_module_remove_quizmodel_module_and_more",
+        "documentation": {}
+    },
+    {
         "label": "CategoryModelAdmin",
         "kind": 6,
         "importPath": "learning.admin",
         "description": "learning.admin",
-        "peekOfCode": "class CategoryModelAdmin(admin.ModelAdmin):\n    list_display = ('category', 'slug')  # Display slug in the admin panel\nadmin.site.register(CategoryModel, CategoryModelAdmin)\nadmin.site.register(CourseModel)",
+        "peekOfCode": "class CategoryModelAdmin(admin.ModelAdmin):\n    list_display = ('category', 'slug')  # Display slug in the admin panel\nadmin.site.register(CategoryModel, CategoryModelAdmin)\nadmin.site.register(CourseModel)\nadmin.site.register(ParentModule)\n@admin.register(ModuleModel)\nclass ModuleAdmin(admin.ModelAdmin):\n    list_display = ('title', 'course', 'parent_module', 'is_parent')\n    search_fields = ('title', 'course__title')\n    list_filter = ('is_parent',)",
+        "detail": "learning.admin",
+        "documentation": {}
+    },
+    {
+        "label": "ModuleAdmin",
+        "kind": 6,
+        "importPath": "learning.admin",
+        "description": "learning.admin",
+        "peekOfCode": "class ModuleAdmin(admin.ModelAdmin):\n    list_display = ('title', 'course', 'parent_module', 'is_parent')\n    search_fields = ('title', 'course__title')\n    list_filter = ('is_parent',)\n# Registering VideoModel\n@admin.register(VideoModel)\nclass VideoAdmin(admin.ModelAdmin):\n    list_display = ('title', 'module', 'video_url')\n    search_fields = ('title', 'module__title')\n# # Registering QuizModel",
+        "detail": "learning.admin",
+        "documentation": {}
+    },
+    {
+        "label": "VideoAdmin",
+        "kind": 6,
+        "importPath": "learning.admin",
+        "description": "learning.admin",
+        "peekOfCode": "class VideoAdmin(admin.ModelAdmin):\n    list_display = ('title', 'module', 'video_url')\n    search_fields = ('title', 'module__title')\n# # Registering QuizModel\n# @admin.register(QuizModel)\n# class QuizAdmin(admin.ModelAdmin):\n#     list_display = ('title', 'module')\n#     search_fields = ('title', 'module__title')\n# # Registering ExamModel\n# @admin.register(ExamModel)",
         "detail": "learning.admin",
         "documentation": {}
     },
@@ -1460,6 +1689,33 @@
         "documentation": {}
     },
     {
+        "label": "ParentModule",
+        "kind": 6,
+        "importPath": "learning.models",
+        "description": "learning.models",
+        "peekOfCode": "class ParentModule(models.Model):\n    title = models.CharField(max_length=300)\n    def __str__(self):\n        return self.title\nclass ModuleModel(models.Model):\n    course = models.ForeignKey(\n        CourseModel, on_delete=models.CASCADE, related_name='modules')\n    title = models.CharField(max_length=100)\n    parent_module = models.ForeignKey(\n        ParentModule, on_delete=models.CASCADE, null=True, blank=True, related_name='child_modules')",
+        "detail": "learning.models",
+        "documentation": {}
+    },
+    {
+        "label": "ModuleModel",
+        "kind": 6,
+        "importPath": "learning.models",
+        "description": "learning.models",
+        "peekOfCode": "class ModuleModel(models.Model):\n    course = models.ForeignKey(\n        CourseModel, on_delete=models.CASCADE, related_name='modules')\n    title = models.CharField(max_length=100)\n    parent_module = models.ForeignKey(\n        ParentModule, on_delete=models.CASCADE, null=True, blank=True, related_name='child_modules')\n    is_parent = models.BooleanField(default=False)\n    description = models.TextField(blank=True, null=True)\n    def __str__(self):\n        return self.title",
+        "detail": "learning.models",
+        "documentation": {}
+    },
+    {
+        "label": "VideoModel",
+        "kind": 6,
+        "importPath": "learning.models",
+        "description": "learning.models",
+        "peekOfCode": "class VideoModel(models.Model):\n    module = models.ForeignKey(\n        ModuleModel, on_delete=models.CASCADE, related_name='videos')\n    title = models.CharField(max_length=100)\n    video_url = models.URLField(max_length=500)\n    duration = models.DurationField()\n    def __str__(self):\n        return self.title\n# class QuizModel(models.Model):\n#     module = models.ForeignKey(",
+        "detail": "learning.models",
+        "documentation": {}
+    },
+    {
         "label": "CategorySerializers",
         "kind": 6,
         "importPath": "learning.serializers",
@@ -1478,11 +1734,38 @@
         "documentation": {}
     },
     {
+        "label": "ParentModuleSerializer",
+        "kind": 6,
+        "importPath": "learning.serializers",
+        "description": "learning.serializers",
+        "peekOfCode": "class ParentModuleSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = ParentModule\n        fields = ['id', 'title']\nclass ModuleSerializer(serializers.ModelSerializer):\n    course = CourseSerializer(read_only=True)\n    parent_module = ParentModuleSerializer(read_only=True)\n    class Meta:\n        model = ModuleModel\n        fields = ['id', 'course', 'title',",
+        "detail": "learning.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "ModuleSerializer",
+        "kind": 6,
+        "importPath": "learning.serializers",
+        "description": "learning.serializers",
+        "peekOfCode": "class ModuleSerializer(serializers.ModelSerializer):\n    course = CourseSerializer(read_only=True)\n    parent_module = ParentModuleSerializer(read_only=True)\n    class Meta:\n        model = ModuleModel\n        fields = ['id', 'course', 'title',\n                  'parent_module', 'is_parent', 'description']\nclass VideoSerializer(serializers.ModelSerializer):\n    module = ModuleSerializer(read_only=True)\n    class Meta:",
+        "detail": "learning.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "VideoSerializer",
+        "kind": 6,
+        "importPath": "learning.serializers",
+        "description": "learning.serializers",
+        "peekOfCode": "class VideoSerializer(serializers.ModelSerializer):\n    module = ModuleSerializer(read_only=True)\n    class Meta:\n        model = VideoModel\n        fields = ['id', 'module', 'title', 'video_url', 'duration']",
+        "detail": "learning.serializers",
+        "documentation": {}
+    },
+    {
         "label": "router",
         "kind": 5,
         "importPath": "learning.urls",
         "description": "learning.urls",
-        "peekOfCode": "router = routers.DefaultRouter()\nrouter.register('category', CategoryViewSets)\nrouter.register('courses', CourseViewSets)\nurlpatterns = [\n    path('', include(router.urls)),\n]",
+        "peekOfCode": "router = routers.DefaultRouter()\nrouter.register('category', CategoryViewSets)\nrouter.register('courses', CourseViewSets)\nrouter.register('modules', ModuleViewSets)\nrouter.register('videos', VideoViewSets)\nrouter.register('parent-modules', ParentModuleViewSets)\nurlpatterns = [\n    path('', include(router.urls)),\n]",
         "detail": "learning.urls",
         "documentation": {}
     },
@@ -1528,6 +1811,33 @@
         "importPath": "learning.views",
         "description": "learning.views",
         "peekOfCode": "class CourseViewSets(viewsets.ModelViewSet):\n    queryset = CourseModel.objects.all()\n    serializer_class = CourseSerializer\n    def create(self, request, *args, **kwargs):\n        serializer = self.get_serializer(data=request.data)\n        serializer.is_valid(raise_exception=True)\n        self.perform_create(serializer)\n        return send_response(\n            success=True,\n            message=\"Course created successfully\",",
+        "detail": "learning.views",
+        "documentation": {}
+    },
+    {
+        "label": "ParentModuleViewSets",
+        "kind": 6,
+        "importPath": "learning.views",
+        "description": "learning.views",
+        "peekOfCode": "class ParentModuleViewSets(viewsets.ModelViewSet):\n    queryset = ParentModule.objects.all()\n    serializer_class = ParentModuleSerializer\n    def create(self, request, *args, **kwargs):\n        serializer = self.get_serializer(data=request.data)\n        serializer.is_valid(raise_exception=True)\n        self.perform_create(serializer)\n        return send_response(\n            success=True,\n            message=\"Parent Module created successfully\",",
+        "detail": "learning.views",
+        "documentation": {}
+    },
+    {
+        "label": "ModuleViewSets",
+        "kind": 6,
+        "importPath": "learning.views",
+        "description": "learning.views",
+        "peekOfCode": "class ModuleViewSets(viewsets.ModelViewSet):\n    queryset = ModuleModel.objects.all()\n    serializer_class = ModuleSerializer\n    def create(self, request, *args, **kwargs):\n        serializer = self.get_serializer(data=request.data)\n        serializer.is_valid(raise_exception=True)\n        self.perform_create(serializer)\n        return send_response(\n            success=True,\n            message=\"Module created successfully\",",
+        "detail": "learning.views",
+        "documentation": {}
+    },
+    {
+        "label": "VideoViewSets",
+        "kind": 6,
+        "importPath": "learning.views",
+        "description": "learning.views",
+        "peekOfCode": "class VideoViewSets(viewsets.ModelViewSet):\n    queryset = VideoModel.objects.all()\n    serializer_class = VideoSerializer\n    def create(self, request, *args, **kwargs):\n        serializer = self.get_serializer(data=request.data)\n        serializer.is_valid(raise_exception=True)\n        self.perform_create(serializer)\n        return send_response(\n            success=True,\n            message=\"Video created successfully\",",
         "detail": "learning.views",
         "documentation": {}
     },
