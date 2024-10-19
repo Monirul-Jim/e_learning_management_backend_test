@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'learning',
     'signup_login',
+    'payments',
 ]
 
 MIDDLEWARE = [
@@ -124,6 +125,8 @@ USE_I18N = True
 USE_TZ = True
 # SSL_COMMERZ_STORE_ID = 'hero67125262bd471'
 # SSL_COMMERZ_STORE_PASSWORD = 'hero67125262bd471@ssl'
+SITE_URL = 'http://localhost:5173'
+STRIPE_SECRET_KEY = 'sk_test_51QBXEDDSQZoG1zomwS0em78tzuZenwAwXgqUcGGqK0kr47figabAjsBNrHIi3sK5h41oT2DXCVuXngFF1Xl1G09T00V97f3o0J'
 # settings.py
 REST_FRAMEWORK = {
     'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',

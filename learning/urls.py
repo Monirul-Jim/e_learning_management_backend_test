@@ -7,4 +7,5 @@ router.register('category', CategoryViewSets)
 router.register('courses', CourseViewSets)
 urlpatterns = [
     path('', include(router.urls)),
+
 ]

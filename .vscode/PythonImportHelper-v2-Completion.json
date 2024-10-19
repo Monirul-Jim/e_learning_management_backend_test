@@ -57,6 +57,30 @@
         "documentation": {}
     },
     {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
         "label": "path",
         "importPath": "django.urls",
         "description": "django.urls",
@@ -74,14 +98,6 @@
     },
     {
         "label": "path",
-        "importPath": "django.urls",
-        "description": "django.urls",
-        "isExtraImport": true,
-        "detail": "django.urls",
-        "documentation": {}
-    },
-    {
-        "label": "include",
         "importPath": "django.urls",
         "description": "django.urls",
         "isExtraImport": true,
@@ -313,6 +329,102 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -338,6 +450,38 @@
         "documentation": {}
     },
     {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "CategoryModel",
+        "importPath": "learning.models",
+        "description": "learning.models",
+        "isExtraImport": true,
+        "detail": "learning.models",
+        "documentation": {}
+    },
+    {
+        "label": "CourseModel",
+        "importPath": "learning.models",
+        "description": "learning.models",
+        "isExtraImport": true,
+        "detail": "learning.models",
+        "documentation": {}
+    },
+    {
         "label": "CategoryModel",
         "importPath": "learning.models",
         "description": "learning.models",
@@ -370,19 +514,11 @@
         "documentation": {}
     },
     {
-        "label": "CategoryModel",
-        "importPath": "learning.models",
-        "description": "learning.models",
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
         "isExtraImport": true,
-        "detail": "learning.models",
-        "documentation": {}
-    },
-    {
-        "label": "CourseModel",
-        "importPath": "learning.models",
-        "description": "learning.models",
-        "isExtraImport": true,
-        "detail": "learning.models",
+        "detail": "django.apps",
         "documentation": {}
     },
     {
@@ -415,6 +551,22 @@
         "description": "rest_framework.views",
         "isExtraImport": true,
         "detail": "rest_framework.views",
+        "documentation": {}
+    },
+    {
+        "label": "APIView",
+        "importPath": "rest_framework.views",
+        "description": "rest_framework.views",
+        "isExtraImport": true,
+        "detail": "rest_framework.views",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
         "documentation": {}
     },
     {
@@ -467,6 +619,14 @@
     },
     {
         "label": "viewsets",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
         "importPath": "rest_framework",
         "description": "rest_framework",
         "isExtraImport": true,
@@ -530,6 +690,30 @@
         "documentation": {}
     },
     {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
         "label": "TestCase",
         "importPath": "django.test",
         "description": "django.test",
@@ -559,6 +743,30 @@
         "description": "django.http",
         "isExtraImport": true,
         "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "JsonResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "JsonResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "csrf_exempt",
+        "importPath": "django.views.decorators.csrf",
+        "description": "django.views.decorators.csrf",
+        "isExtraImport": true,
+        "detail": "django.views.decorators.csrf",
         "documentation": {}
     },
     {
@@ -586,11 +794,28 @@
         "documentation": {}
     },
     {
-        "label": "User",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
+        "label": "Order",
+        "importPath": "payments.models",
+        "description": "payments.models",
         "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
+        "detail": "payments.models",
+        "documentation": {}
+    },
+    {
+        "label": "View",
+        "importPath": "django.views",
+        "description": "django.views",
+        "isExtraImport": true,
+        "detail": "django.views",
+        "documentation": {}
+    },
+    {
+        "label": "stripe",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "stripe",
+        "description": "stripe",
+        "detail": "stripe",
         "documentation": {}
     },
     {
@@ -780,7 +1005,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "CORS_ALLOW_CREDENTIALS = True\n# Internationalization\n# https://docs.djangoproject.com/en/5.1/topics/i18n/\nLANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# SSL_COMMERZ_STORE_ID = 'hero67125262bd471'\n# SSL_COMMERZ_STORE_PASSWORD = 'hero67125262bd471@ssl'\n# settings.py",
+        "peekOfCode": "CORS_ALLOW_CREDENTIALS = True\n# Internationalization\n# https://docs.djangoproject.com/en/5.1/topics/i18n/\nLANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# SSL_COMMERZ_STORE_ID = 'hero67125262bd471'\n# SSL_COMMERZ_STORE_PASSWORD = 'hero67125262bd471@ssl'\nSITE_URL = 'http://localhost:5173'",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -789,7 +1014,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# SSL_COMMERZ_STORE_ID = 'hero67125262bd471'\n# SSL_COMMERZ_STORE_PASSWORD = 'hero67125262bd471@ssl'\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# SSL_COMMERZ_STORE_ID = 'hero67125262bd471'\n# SSL_COMMERZ_STORE_PASSWORD = 'hero67125262bd471@ssl'\nSITE_URL = 'http://localhost:5173'\nSTRIPE_SECRET_KEY = 'sk_test_51QBXEDDSQZoG1zomwS0em78tzuZenwAwXgqUcGGqK0kr47figabAjsBNrHIi3sK5h41oT2DXCVuXngFF1Xl1G09T00V97f3o0J'\n# settings.py\nREST_FRAMEWORK = {",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -798,7 +1023,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# SSL_COMMERZ_STORE_ID = 'hero67125262bd471'\n# SSL_COMMERZ_STORE_PASSWORD = 'hero67125262bd471@ssl'\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',  # Only for authentication",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# SSL_COMMERZ_STORE_ID = 'hero67125262bd471'\n# SSL_COMMERZ_STORE_PASSWORD = 'hero67125262bd471@ssl'\nSITE_URL = 'http://localhost:5173'\nSTRIPE_SECRET_KEY = 'sk_test_51QBXEDDSQZoG1zomwS0em78tzuZenwAwXgqUcGGqK0kr47figabAjsBNrHIi3sK5h41oT2DXCVuXngFF1Xl1G09T00V97f3o0J'\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -807,7 +1032,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# SSL_COMMERZ_STORE_ID = 'hero67125262bd471'\n# SSL_COMMERZ_STORE_PASSWORD = 'hero67125262bd471@ssl'\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',  # Only for authentication\n    ),",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# SSL_COMMERZ_STORE_ID = 'hero67125262bd471'\n# SSL_COMMERZ_STORE_PASSWORD = 'hero67125262bd471@ssl'\nSITE_URL = 'http://localhost:5173'\nSTRIPE_SECRET_KEY = 'sk_test_51QBXEDDSQZoG1zomwS0em78tzuZenwAwXgqUcGGqK0kr47figabAjsBNrHIi3sK5h41oT2DXCVuXngFF1Xl1G09T00V97f3o0J'\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -816,7 +1041,25 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "USE_TZ = True\n# SSL_COMMERZ_STORE_ID = 'hero67125262bd471'\n# SSL_COMMERZ_STORE_PASSWORD = 'hero67125262bd471@ssl'\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',  # Only for authentication\n    ),\n    'DEFAULT_PERMISSION_CLASSES': (",
+        "peekOfCode": "USE_TZ = True\n# SSL_COMMERZ_STORE_ID = 'hero67125262bd471'\n# SSL_COMMERZ_STORE_PASSWORD = 'hero67125262bd471@ssl'\nSITE_URL = 'http://localhost:5173'\nSTRIPE_SECRET_KEY = 'sk_test_51QBXEDDSQZoG1zomwS0em78tzuZenwAwXgqUcGGqK0kr47figabAjsBNrHIi3sK5h41oT2DXCVuXngFF1Xl1G09T00V97f3o0J'\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',  # Only for authentication",
+        "detail": "e_learning.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SITE_URL",
+        "kind": 5,
+        "importPath": "e_learning.settings",
+        "description": "e_learning.settings",
+        "peekOfCode": "SITE_URL = 'http://localhost:5173'\nSTRIPE_SECRET_KEY = 'sk_test_51QBXEDDSQZoG1zomwS0em78tzuZenwAwXgqUcGGqK0kr47figabAjsBNrHIi3sK5h41oT2DXCVuXngFF1Xl1G09T00V97f3o0J'\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',  # Only for authentication\n    ),\n    'DEFAULT_PERMISSION_CLASSES': (\n        # Allow access by default; customize as needed",
+        "detail": "e_learning.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STRIPE_SECRET_KEY",
+        "kind": 5,
+        "importPath": "e_learning.settings",
+        "description": "e_learning.settings",
+        "peekOfCode": "STRIPE_SECRET_KEY = 'sk_test_51QBXEDDSQZoG1zomwS0em78tzuZenwAwXgqUcGGqK0kr47figabAjsBNrHIi3sK5h41oT2DXCVuXngFF1Xl1G09T00V97f3o0J'\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',  # Only for authentication\n    ),\n    'DEFAULT_PERMISSION_CLASSES': (\n        # Allow access by default; customize as needed\n        'rest_framework.permissions.AllowAny',",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -861,7 +1104,7 @@
         "kind": 5,
         "importPath": "e_learning.urls",
         "description": "e_learning.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('learning/', include('learning.urls')),\n    path('sign-login/', include('signup_login.urls')),\n]\nhandler404 = 'learning.views.api_not_found'",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('learning/', include('learning.urls')),\n    path('sign-login/', include('signup_login.urls')),\n    path('payments/', include('payments.urls'))\n]\nhandler404 = 'learning.views.api_not_found'",
         "detail": "e_learning.urls",
         "documentation": {}
     },
@@ -992,6 +1235,42 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "learning.migrations.0013_ordermodel",
+        "description": "learning.migrations.0013_ordermodel",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('learning', '0012_remove_coursemodel_category_coursemodel_categories'),\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='OrderModel',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
+        "detail": "learning.migrations.0013_ordermodel",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "learning.migrations.0014_alter_ordermodel_payment_status_and_more",
+        "description": "learning.migrations.0014_alter_ordermodel_payment_status_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('learning', '0013_ordermodel'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='ordermodel',\n            name='payment_status',\n            field=models.CharField(default='pending', max_length=20),\n        ),",
+        "detail": "learning.migrations.0014_alter_ordermodel_payment_status_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "learning.migrations.0015_cartitem_remove_ordermodel_user_order_and_more",
+        "description": "learning.migrations.0015_cartitem_remove_ordermodel_user_order_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('learning', '0014_alter_ordermodel_payment_status_and_more'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='CartItem',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('title', models.CharField(max_length=255)),",
+        "detail": "learning.migrations.0015_cartitem_remove_ordermodel_user_order_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "learning.migrations.0016_remove_order_items_delete_cartitem_delete_order",
+        "description": "learning.migrations.0016_remove_order_items_delete_cartitem_delete_order",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('learning', '0015_cartitem_remove_ordermodel_user_order_and_more'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='order',\n            name='items',\n        ),\n        migrations.DeleteModel(",
+        "detail": "learning.migrations.0016_remove_order_items_delete_cartitem_delete_order",
+        "documentation": {}
+    },
+    {
         "label": "CategoryModelAdmin",
         "kind": 6,
         "importPath": "learning.admin",
@@ -1115,6 +1394,69 @@
         "description": "learning.views",
         "peekOfCode": "def api_not_found(request, exception=None):\n    return JsonResponse({\n        'statusCode': 404,\n        'success': False,\n        'message': 'API Not Found!!',\n        'error': ''\n    }, status=404)",
         "detail": "learning.views",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "payments.migrations.0001_initial",
+        "description": "payments.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Order',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('stripe_session_id', models.CharField(max_length=255, unique=True)),",
+        "detail": "payments.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "payments.migrations.0002_remove_order_amount_total_and_more",
+        "description": "payments.migrations.0002_remove_order_amount_total_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('payments', '0001_initial'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='order',\n            name='amount_total',\n        ),\n        migrations.RemoveField(",
+        "detail": "payments.migrations.0002_remove_order_amount_total_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "PaymentsConfig",
+        "kind": 6,
+        "importPath": "payments.apps",
+        "description": "payments.apps",
+        "peekOfCode": "class PaymentsConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'payments'",
+        "detail": "payments.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Order",
+        "kind": 6,
+        "importPath": "payments.models",
+        "description": "payments.models",
+        "peekOfCode": "class Order(models.Model):\n    customer_email = models.EmailField(default='a@gmail.com')\n    # Assuming you want to keep this field\n    customer_name = models.CharField(max_length=255, default='a')\n    total_amount = models.DecimalField(\n        max_digits=10, decimal_places=2, default=0)\n    payment_intent = models.CharField(max_length=255, blank=True, null=True)\n    course_description = models.TextField(null=True, blank=True)\n    created_at = models.DateTimeField(auto_now_add=True)\n    def __str__(self):",
+        "detail": "payments.models",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "payments.urls",
+        "description": "payments.urls",
+        "peekOfCode": "urlpatterns = [\n    path('create-checkout-session/', StripeCheckoutView.as_view()),\n]",
+        "detail": "payments.urls",
+        "documentation": {}
+    },
+    {
+        "label": "StripeCheckoutView",
+        "kind": 6,
+        "importPath": "payments.views",
+        "description": "payments.views",
+        "peekOfCode": "class StripeCheckoutView(APIView):\n    def post(self, request):\n        try:\n            total_amount = request.data.get('totalAmount', 0)\n            total_amount_cents = int(float(total_amount) * 100)\n            checkout_session = stripe.checkout.Session.create(\n                payment_method_types=['card'],\n                line_items=[{\n                    'price_data': {\n                        'currency': 'usd',",
+        "detail": "payments.views",
+        "documentation": {}
+    },
+    {
+        "label": "stripe.api_key",
+        "kind": 5,
+        "importPath": "payments.views",
+        "description": "payments.views",
+        "peekOfCode": "stripe.api_key = settings.STRIPE_SECRET_KEY\nclass StripeCheckoutView(APIView):\n    def post(self, request):\n        try:\n            total_amount = request.data.get('totalAmount', 0)\n            total_amount_cents = int(float(total_amount) * 100)\n            checkout_session = stripe.checkout.Session.create(\n                payment_method_types=['card'],\n                line_items=[{\n                    'price_data': {",
+        "detail": "payments.views",
         "documentation": {}
     },
     {

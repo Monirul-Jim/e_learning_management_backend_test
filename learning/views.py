@@ -1,8 +1,10 @@
+from django.views.decorators.csrf import csrf_exempt
 from rest_framework import viewsets, status
 from learning.models import CategoryModel, CourseModel
 from learning.serializers import CategorySerializers, CourseSerializer
 from django.http import JsonResponse
 from learning.utils import send_response
+from django.http import JsonResponse
 
 
 class CategoryViewSets(viewsets.ModelViewSet):
@@ -65,6 +67,7 @@ class CourseViewSets(viewsets.ModelViewSet):
             data=serializer.data,
             status_code=status.HTTP_200_OK
         )
+
 
 def api_not_found(request, exception=None):
     return JsonResponse({
