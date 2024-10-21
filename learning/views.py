@@ -110,6 +110,7 @@ class ModuleViewSets(viewsets.ModelViewSet):
     serializer_class = ModuleSerializer
 
     def create(self, request, *args, **kwargs):
+        print("Request data:", request.data)
         serializer = self.get_serializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         self.perform_create(serializer)

@@ -8,20 +8,19 @@ from learning.models import (CategoryModel, CourseModel, ModuleModel,
                              )
 
 
+@admin.register(CategoryModel)
 class CategoryModelAdmin(admin.ModelAdmin):
-    list_display = ('category', 'slug')  # Display slug in the admin panel
+    list_display = ('category', 'slug')
 
 
-admin.site.register(CategoryModel, CategoryModelAdmin)
 admin.site.register(CourseModel)
 admin.site.register(ParentModule)
 
 
 @admin.register(ModuleModel)
 class ModuleAdmin(admin.ModelAdmin):
-    list_display = ('title', 'course', 'parent_module', 'is_parent')
+    list_display = ('title', 'course', 'parent_module')
     search_fields = ('title', 'course__title')
-    list_filter = ('is_parent',)
 
 
 # Registering VideoModel

@@ -50,7 +50,6 @@ class ModuleModel(models.Model):
     title = models.CharField(max_length=100)
     parent_module = models.ForeignKey(
         ParentModule, on_delete=models.CASCADE, null=True, blank=True, related_name='child_modules')
-    is_parent = models.BooleanField(default=False)
     description = models.TextField(blank=True, null=True)
 
     def __str__(self):

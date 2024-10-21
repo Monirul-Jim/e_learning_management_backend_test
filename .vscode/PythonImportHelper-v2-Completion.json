@@ -201,366 +201,6 @@
         "documentation": {}
     },
     {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
         "label": "django.db.models.deletion",
         "kind": 6,
         "isExtraImport": true,
@@ -570,35 +210,59 @@
         "documentation": {}
     },
     {
-        "label": "settings",
-        "importPath": "django.conf",
-        "description": "django.conf",
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
         "isExtraImport": true,
-        "detail": "django.conf",
+        "detail": "django.db",
         "documentation": {}
     },
     {
-        "label": "settings",
-        "importPath": "django.conf",
-        "description": "django.conf",
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
         "isExtraImport": true,
-        "detail": "django.conf",
+        "detail": "django.db",
         "documentation": {}
     },
     {
-        "label": "settings",
-        "importPath": "django.conf",
-        "description": "django.conf",
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
         "isExtraImport": true,
-        "detail": "django.conf",
+        "detail": "django.db",
         "documentation": {}
     },
     {
-        "label": "settings",
-        "importPath": "django.conf",
-        "description": "django.conf",
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
         "isExtraImport": true,
-        "detail": "django.conf",
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
         "documentation": {}
     },
     {
@@ -1098,6 +762,22 @@
         "documentation": {}
     },
     {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
         "label": "PurchaseOrderModel",
         "importPath": "payments.models",
         "description": "payments.models",
@@ -1459,170 +1139,8 @@
         "kind": 6,
         "importPath": "learning.migrations.0001_initial",
         "description": "learning.migrations.0001_initial",
-        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Category',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('category', models.CharField(max_length=40)),",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='CategoryModel',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('category', models.CharField(max_length=40, unique=True)),",
         "detail": "learning.migrations.0001_initial",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "learning.migrations.0002_rename_category_categorymodel",
-        "description": "learning.migrations.0002_rename_category_categorymodel",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('learning', '0001_initial'),\n    ]\n    operations = [\n        migrations.RenameModel(\n            old_name='Category',\n            new_name='CategoryModel',\n        ),\n    ]",
-        "detail": "learning.migrations.0002_rename_category_categorymodel",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "learning.migrations.0003_categorymodel_slug",
-        "description": "learning.migrations.0003_categorymodel_slug",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('learning', '0002_rename_category_categorymodel'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='categorymodel',\n            name='slug',\n            field=models.SlugField(blank=True, unique=True),\n        ),",
-        "detail": "learning.migrations.0003_categorymodel_slug",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "learning.migrations.0004_learningmodel",
-        "description": "learning.migrations.0004_learningmodel",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('learning', '0003_categorymodel_slug'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='LearningModel',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('image', models.ImageField(upload_to='learning/uploads')),",
-        "detail": "learning.migrations.0004_learningmodel",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "learning.migrations.0005_rename_learningmodel_coursemodel",
-        "description": "learning.migrations.0005_rename_learningmodel_coursemodel",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('learning', '0004_learningmodel'),\n    ]\n    operations = [\n        migrations.RenameModel(\n            old_name='LearningModel',\n            new_name='CourseModel',\n        ),\n    ]",
-        "detail": "learning.migrations.0005_rename_learningmodel_coursemodel",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "learning.migrations.0006_alter_coursemodel_image",
-        "description": "learning.migrations.0006_alter_coursemodel_image",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('learning', '0005_rename_learningmodel_coursemodel'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='coursemodel',\n            name='image',\n            field=models.URLField(),\n        ),",
-        "detail": "learning.migrations.0006_alter_coursemodel_image",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "learning.migrations.0007_alter_coursemodel_image",
-        "description": "learning.migrations.0007_alter_coursemodel_image",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('learning', '0006_alter_coursemodel_image'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='coursemodel',\n            name='image',\n            field=models.URLField(max_length=500),\n        ),",
-        "detail": "learning.migrations.0007_alter_coursemodel_image",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "learning.migrations.0008_coursemodel_price_alter_categorymodel_category",
-        "description": "learning.migrations.0008_coursemodel_price_alter_categorymodel_category",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('learning', '0007_alter_coursemodel_image'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='coursemodel',\n            name='price',\n            field=models.IntegerField(blank=True, null=True),\n        ),",
-        "detail": "learning.migrations.0008_coursemodel_price_alter_categorymodel_category",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "learning.migrations.0009_remove_coursemodel_category_coursemodel_categories",
-        "description": "learning.migrations.0009_remove_coursemodel_category_coursemodel_categories",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('learning', '0008_coursemodel_price_alter_categorymodel_category'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='coursemodel',\n            name='category',\n        ),\n        migrations.AddField(",
-        "detail": "learning.migrations.0009_remove_coursemodel_category_coursemodel_categories",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "learning.migrations.0010_remove_coursemodel_categories_and_more",
-        "description": "learning.migrations.0010_remove_coursemodel_categories_and_more",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('learning', '0009_remove_coursemodel_category_coursemodel_categories'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='coursemodel',\n            name='categories',\n        ),\n        migrations.AlterField(",
-        "detail": "learning.migrations.0010_remove_coursemodel_categories_and_more",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "learning.migrations.0011_coursemodel_category_alter_coursemodel_price",
-        "description": "learning.migrations.0011_coursemodel_category_alter_coursemodel_price",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('learning', '0010_remove_coursemodel_categories_and_more'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='coursemodel',\n            name='category',\n            field=models.OneToOneField(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, to='learning.categorymodel'),\n        ),",
-        "detail": "learning.migrations.0011_coursemodel_category_alter_coursemodel_price",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "learning.migrations.0012_remove_coursemodel_category_coursemodel_categories",
-        "description": "learning.migrations.0012_remove_coursemodel_category_coursemodel_categories",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('learning', '0011_coursemodel_category_alter_coursemodel_price'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='coursemodel',\n            name='category',\n        ),\n        migrations.AddField(",
-        "detail": "learning.migrations.0012_remove_coursemodel_category_coursemodel_categories",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "learning.migrations.0013_ordermodel",
-        "description": "learning.migrations.0013_ordermodel",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('learning', '0012_remove_coursemodel_category_coursemodel_categories'),\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='OrderModel',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
-        "detail": "learning.migrations.0013_ordermodel",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "learning.migrations.0014_alter_ordermodel_payment_status_and_more",
-        "description": "learning.migrations.0014_alter_ordermodel_payment_status_and_more",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('learning', '0013_ordermodel'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='ordermodel',\n            name='payment_status',\n            field=models.CharField(default='pending', max_length=20),\n        ),",
-        "detail": "learning.migrations.0014_alter_ordermodel_payment_status_and_more",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "learning.migrations.0015_cartitem_remove_ordermodel_user_order_and_more",
-        "description": "learning.migrations.0015_cartitem_remove_ordermodel_user_order_and_more",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('learning', '0014_alter_ordermodel_payment_status_and_more'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='CartItem',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('title', models.CharField(max_length=255)),",
-        "detail": "learning.migrations.0015_cartitem_remove_ordermodel_user_order_and_more",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "learning.migrations.0016_remove_order_items_delete_cartitem_delete_order",
-        "description": "learning.migrations.0016_remove_order_items_delete_cartitem_delete_order",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('learning', '0015_cartitem_remove_ordermodel_user_order_and_more'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='order',\n            name='items',\n        ),\n        migrations.DeleteModel(",
-        "detail": "learning.migrations.0016_remove_order_items_delete_cartitem_delete_order",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "learning.migrations.0017_exammodel_answermodel_modulemodel_exammodel_module_and_more",
-        "description": "learning.migrations.0017_exammodel_answermodel_modulemodel_exammodel_module_and_more",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('learning', '0016_remove_order_items_delete_cartitem_delete_order'),\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='ExamModel',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
-        "detail": "learning.migrations.0017_exammodel_answermodel_modulemodel_exammodel_module_and_more",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "learning.migrations.0018_parentmodule_alter_modulemodel_parent_module",
-        "description": "learning.migrations.0018_parentmodule_alter_modulemodel_parent_module",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('learning', '0017_exammodel_answermodel_modulemodel_exammodel_module_and_more'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='ParentModule',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('title', models.CharField(max_length=300)),",
-        "detail": "learning.migrations.0018_parentmodule_alter_modulemodel_parent_module",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "learning.migrations.0019_remove_exammodel_module_remove_quizmodel_module_and_more",
-        "description": "learning.migrations.0019_remove_exammodel_module_remove_quizmodel_module_and_more",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('learning', '0018_parentmodule_alter_modulemodel_parent_module'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='exammodel',\n            name='module',\n        ),\n        migrations.RemoveField(",
-        "detail": "learning.migrations.0019_remove_exammodel_module_remove_quizmodel_module_and_more",
         "documentation": {}
     },
     {
@@ -1630,7 +1148,7 @@
         "kind": 6,
         "importPath": "learning.admin",
         "description": "learning.admin",
-        "peekOfCode": "class CategoryModelAdmin(admin.ModelAdmin):\n    list_display = ('category', 'slug')  # Display slug in the admin panel\nadmin.site.register(CategoryModel, CategoryModelAdmin)\nadmin.site.register(CourseModel)\nadmin.site.register(ParentModule)\n@admin.register(ModuleModel)\nclass ModuleAdmin(admin.ModelAdmin):\n    list_display = ('title', 'course', 'parent_module', 'is_parent')\n    search_fields = ('title', 'course__title')\n    list_filter = ('is_parent',)",
+        "peekOfCode": "class CategoryModelAdmin(admin.ModelAdmin):\n    list_display = ('category', 'slug')\nadmin.site.register(CourseModel)\nadmin.site.register(ParentModule)\n@admin.register(ModuleModel)\nclass ModuleAdmin(admin.ModelAdmin):\n    list_display = ('title', 'course', 'parent_module')\n    search_fields = ('title', 'course__title')\n# Registering VideoModel\n@admin.register(VideoModel)",
         "detail": "learning.admin",
         "documentation": {}
     },
@@ -1639,7 +1157,7 @@
         "kind": 6,
         "importPath": "learning.admin",
         "description": "learning.admin",
-        "peekOfCode": "class ModuleAdmin(admin.ModelAdmin):\n    list_display = ('title', 'course', 'parent_module', 'is_parent')\n    search_fields = ('title', 'course__title')\n    list_filter = ('is_parent',)\n# Registering VideoModel\n@admin.register(VideoModel)\nclass VideoAdmin(admin.ModelAdmin):\n    list_display = ('title', 'module', 'video_url')\n    search_fields = ('title', 'module__title')\n# # Registering QuizModel",
+        "peekOfCode": "class ModuleAdmin(admin.ModelAdmin):\n    list_display = ('title', 'course', 'parent_module')\n    search_fields = ('title', 'course__title')\n# Registering VideoModel\n@admin.register(VideoModel)\nclass VideoAdmin(admin.ModelAdmin):\n    list_display = ('title', 'module', 'video_url')\n    search_fields = ('title', 'module__title')\n# # Registering QuizModel\n# @admin.register(QuizModel)",
         "detail": "learning.admin",
         "documentation": {}
     },
@@ -1702,7 +1220,7 @@
         "kind": 6,
         "importPath": "learning.models",
         "description": "learning.models",
-        "peekOfCode": "class ModuleModel(models.Model):\n    course = models.ForeignKey(\n        CourseModel, on_delete=models.CASCADE, related_name='modules')\n    title = models.CharField(max_length=100)\n    parent_module = models.ForeignKey(\n        ParentModule, on_delete=models.CASCADE, null=True, blank=True, related_name='child_modules')\n    is_parent = models.BooleanField(default=False)\n    description = models.TextField(blank=True, null=True)\n    def __str__(self):\n        return self.title",
+        "peekOfCode": "class ModuleModel(models.Model):\n    course = models.ForeignKey(\n        CourseModel, on_delete=models.CASCADE, related_name='modules')\n    title = models.CharField(max_length=100)\n    parent_module = models.ForeignKey(\n        ParentModule, on_delete=models.CASCADE, null=True, blank=True, related_name='child_modules')\n    description = models.TextField(blank=True, null=True)\n    def __str__(self):\n        return self.title\nclass VideoModel(models.Model):",
         "detail": "learning.models",
         "documentation": {}
     },
@@ -1738,7 +1256,7 @@
         "kind": 6,
         "importPath": "learning.serializers",
         "description": "learning.serializers",
-        "peekOfCode": "class ParentModuleSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = ParentModule\n        fields = ['id', 'title']\nclass ModuleSerializer(serializers.ModelSerializer):\n    course = CourseSerializer(read_only=True)\n    parent_module = ParentModuleSerializer(read_only=True)\n    class Meta:\n        model = ModuleModel\n        fields = ['id', 'course', 'title',",
+        "peekOfCode": "class ParentModuleSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = ParentModule\n        fields = ['id', 'title']\nclass ModuleSerializer(serializers.ModelSerializer):\n    course = serializers.PrimaryKeyRelatedField(\n        queryset=CourseModel.objects.all())\n    parent_module = serializers.PrimaryKeyRelatedField(\n        queryset=ParentModule.objects.all())\n    class Meta:",
         "detail": "learning.serializers",
         "documentation": {}
     },
@@ -1747,7 +1265,7 @@
         "kind": 6,
         "importPath": "learning.serializers",
         "description": "learning.serializers",
-        "peekOfCode": "class ModuleSerializer(serializers.ModelSerializer):\n    course = CourseSerializer(read_only=True)\n    parent_module = ParentModuleSerializer(read_only=True)\n    class Meta:\n        model = ModuleModel\n        fields = ['id', 'course', 'title',\n                  'parent_module', 'is_parent', 'description']\nclass VideoSerializer(serializers.ModelSerializer):\n    module = ModuleSerializer(read_only=True)\n    class Meta:",
+        "peekOfCode": "class ModuleSerializer(serializers.ModelSerializer):\n    course = serializers.PrimaryKeyRelatedField(\n        queryset=CourseModel.objects.all())\n    parent_module = serializers.PrimaryKeyRelatedField(\n        queryset=ParentModule.objects.all())\n    class Meta:\n        model = ModuleModel\n        fields = ['id', 'course', 'title',\n                  'parent_module', 'description']\nclass VideoSerializer(serializers.ModelSerializer):",
         "detail": "learning.serializers",
         "documentation": {}
     },
@@ -1756,7 +1274,7 @@
         "kind": 6,
         "importPath": "learning.serializers",
         "description": "learning.serializers",
-        "peekOfCode": "class VideoSerializer(serializers.ModelSerializer):\n    module = ModuleSerializer(read_only=True)\n    class Meta:\n        model = VideoModel\n        fields = ['id', 'module', 'title', 'video_url', 'duration']",
+        "peekOfCode": "class VideoSerializer(serializers.ModelSerializer):\n    # module = ModuleSerializer(read_only=True)\n    module = serializers.PrimaryKeyRelatedField(\n        queryset=ModuleModel.objects.all())\n    class Meta:\n        model = VideoModel\n        fields = ['id', 'module', 'title', 'video_url', 'duration']",
         "detail": "learning.serializers",
         "documentation": {}
     },
@@ -1828,7 +1346,7 @@
         "kind": 6,
         "importPath": "learning.views",
         "description": "learning.views",
-        "peekOfCode": "class ModuleViewSets(viewsets.ModelViewSet):\n    queryset = ModuleModel.objects.all()\n    serializer_class = ModuleSerializer\n    def create(self, request, *args, **kwargs):\n        serializer = self.get_serializer(data=request.data)\n        serializer.is_valid(raise_exception=True)\n        self.perform_create(serializer)\n        return send_response(\n            success=True,\n            message=\"Module created successfully\",",
+        "peekOfCode": "class ModuleViewSets(viewsets.ModelViewSet):\n    queryset = ModuleModel.objects.all()\n    serializer_class = ModuleSerializer\n    def create(self, request, *args, **kwargs):\n        print(\"Request data:\", request.data)\n        serializer = self.get_serializer(data=request.data)\n        serializer.is_valid(raise_exception=True)\n        self.perform_create(serializer)\n        return send_response(\n            success=True,",
         "detail": "learning.views",
         "documentation": {}
     },
@@ -1855,35 +1373,8 @@
         "kind": 6,
         "importPath": "payments.migrations.0001_initial",
         "description": "payments.migrations.0001_initial",
-        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Order',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('stripe_session_id', models.CharField(max_length=255, unique=True)),",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        ('learning', '0001_initial'),\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='PurchaseOrderModel',\n            fields=[",
         "detail": "payments.migrations.0001_initial",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "payments.migrations.0002_remove_order_amount_total_and_more",
-        "description": "payments.migrations.0002_remove_order_amount_total_and_more",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('payments', '0001_initial'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='order',\n            name='amount_total',\n        ),\n        migrations.RemoveField(",
-        "detail": "payments.migrations.0002_remove_order_amount_total_and_more",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "payments.migrations.0003_purchaseordermodel_delete_order",
-        "description": "payments.migrations.0003_purchaseordermodel_delete_order",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('learning', '0016_remove_order_items_delete_cartitem_delete_order'),\n        ('payments', '0002_remove_order_amount_total_and_more'),\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='PurchaseOrderModel',\n            fields=[",
-        "detail": "payments.migrations.0003_purchaseordermodel_delete_order",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "payments.migrations.0004_purchaseordermodel_order_id_and_more",
-        "description": "payments.migrations.0004_purchaseordermodel_order_id_and_more",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('payments', '0003_purchaseordermodel_delete_order'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='purchaseordermodel',\n            name='order_id',\n            field=models.CharField(blank=True, max_length=50, null=True),\n        ),",
-        "detail": "payments.migrations.0004_purchaseordermodel_order_id_and_more",
         "documentation": {}
     },
     {
