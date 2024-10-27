@@ -226,6 +226,22 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -762,6 +778,14 @@
         "documentation": {}
     },
     {
+        "label": "action",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
         "label": "settings",
         "importPath": "django.conf",
         "description": "django.conf",
@@ -1144,6 +1168,15 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "learning.migrations.0002_parentmodule_alter_modulemodel_parent_module",
+        "description": "learning.migrations.0002_parentmodule_alter_modulemodel_parent_module",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('learning', '0001_initial'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='ParentModule',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('title', models.CharField(max_length=300)),",
+        "detail": "learning.migrations.0002_parentmodule_alter_modulemodel_parent_module",
+        "documentation": {}
+    },
+    {
         "label": "CategoryModelAdmin",
         "kind": 6,
         "importPath": "learning.admin",
@@ -1256,7 +1289,7 @@
         "kind": 6,
         "importPath": "learning.serializers",
         "description": "learning.serializers",
-        "peekOfCode": "class ParentModuleSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = ParentModule\n        fields = ['id', 'title']\nclass ModuleSerializer(serializers.ModelSerializer):\n    course = serializers.PrimaryKeyRelatedField(\n        queryset=CourseModel.objects.all())\n    parent_module = serializers.PrimaryKeyRelatedField(\n        queryset=ParentModule.objects.all())\n    class Meta:",
+        "peekOfCode": "class ParentModuleSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = ParentModule\n        fields = ['id', 'title']\nclass ModuleSerializer(serializers.ModelSerializer):\n    # course = serializers.PrimaryKeyRelatedField(\n    #     queryset=CourseModel.objects.all())\n    # parent_module = serializers.PrimaryKeyRelatedField(\n    #     queryset=ParentModule.objects.all())\n    course = CourseSerializer()",
         "detail": "learning.serializers",
         "documentation": {}
     },
@@ -1265,7 +1298,7 @@
         "kind": 6,
         "importPath": "learning.serializers",
         "description": "learning.serializers",
-        "peekOfCode": "class ModuleSerializer(serializers.ModelSerializer):\n    course = serializers.PrimaryKeyRelatedField(\n        queryset=CourseModel.objects.all())\n    parent_module = serializers.PrimaryKeyRelatedField(\n        queryset=ParentModule.objects.all())\n    class Meta:\n        model = ModuleModel\n        fields = ['id', 'course', 'title',\n                  'parent_module', 'description']\nclass VideoSerializer(serializers.ModelSerializer):",
+        "peekOfCode": "class ModuleSerializer(serializers.ModelSerializer):\n    # course = serializers.PrimaryKeyRelatedField(\n    #     queryset=CourseModel.objects.all())\n    # parent_module = serializers.PrimaryKeyRelatedField(\n    #     queryset=ParentModule.objects.all())\n    course = CourseSerializer()\n    parent_module = ParentModuleSerializer()\n    class Meta:\n        model = ModuleModel\n        fields = ['id', 'course', 'title',",
         "detail": "learning.serializers",
         "documentation": {}
     },
@@ -1274,7 +1307,7 @@
         "kind": 6,
         "importPath": "learning.serializers",
         "description": "learning.serializers",
-        "peekOfCode": "class VideoSerializer(serializers.ModelSerializer):\n    # module = ModuleSerializer(read_only=True)\n    module = serializers.PrimaryKeyRelatedField(\n        queryset=ModuleModel.objects.all())\n    class Meta:\n        model = VideoModel\n        fields = ['id', 'module', 'title', 'video_url', 'duration']",
+        "peekOfCode": "class VideoSerializer(serializers.ModelSerializer):\n    module = ModuleSerializer()\n    # module = serializers.PrimaryKeyRelatedField(\n    #     queryset=ModuleModel.objects.all())\n    class Meta:\n        model = VideoModel\n        fields = ['id', 'module', 'title',\n                  'video_url', 'duration']",
         "detail": "learning.serializers",
         "documentation": {}
     },
@@ -1346,7 +1379,7 @@
         "kind": 6,
         "importPath": "learning.views",
         "description": "learning.views",
-        "peekOfCode": "class ModuleViewSets(viewsets.ModelViewSet):\n    queryset = ModuleModel.objects.all()\n    serializer_class = ModuleSerializer\n    def create(self, request, *args, **kwargs):\n        print(\"Request data:\", request.data)\n        serializer = self.get_serializer(data=request.data)\n        serializer.is_valid(raise_exception=True)\n        self.perform_create(serializer)\n        return send_response(\n            success=True,",
+        "peekOfCode": "class ModuleViewSets(viewsets.ModelViewSet):\n    queryset = ModuleModel.objects.all()\n    serializer_class = ModuleSerializer\n    def create(self, request, *args, **kwargs):\n        serializer = self.get_serializer(data=request.data)\n        serializer.is_valid(raise_exception=True)\n        self.perform_create(serializer)\n        return send_response(\n            success=True,\n            message=\"Module created successfully\",",
         "detail": "learning.views",
         "documentation": {}
     },

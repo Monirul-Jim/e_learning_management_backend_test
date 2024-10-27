@@ -5,6 +5,7 @@ from learning.serializers import CategorySerializers, CourseSerializer, ModuleSe
 from django.http import JsonResponse
 from learning.utils import send_response
 from django.http import JsonResponse
+from rest_framework.decorators import action
 
 
 class CategoryViewSets(viewsets.ModelViewSet):
@@ -110,7 +111,6 @@ class ModuleViewSets(viewsets.ModelViewSet):
     serializer_class = ModuleSerializer
 
     def create(self, request, *args, **kwargs):
-        print("Request data:", request.data)
         serializer = self.get_serializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         self.perform_create(serializer)
@@ -157,9 +157,20 @@ class VideoViewSets(viewsets.ModelViewSet):
             status_code=status.HTTP_201_CREATED
         )
 
-    def list(self, request, *args, **kwargs):
-        queryset = self.get_queryset()
-        serializer = self.get_serializer(queryset, many=True)
+    # def list(self, request, *args, **kwargs):
+    #     queryset = self.get_queryset()
+    #     serializer = self.get_serializer(queryset, many=True)
+    #     return send_response(
+    #         success=True,
+    #         message="Videos retrieved successfully",
+    #         data=serializer.data,
+    #         status_code=status.HTTP_200_OK
+    #     )
+    @action(detail=False, methods=['get'], url_path='course/(?P<course_id>[^/.]+)')
+    def list_course_videos(self, request, course_id=None):
+        # Filter videos by course ID
+        videos = self.queryset.filter(module__course__id=course_id)
+        serializer = self.get_serializer(videos, many=True)
         return send_response(
             success=True,
             message="Videos retrieved successfully",

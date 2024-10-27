@@ -42,10 +42,12 @@ class ParentModuleSerializer(serializers.ModelSerializer):
 
 
 class ModuleSerializer(serializers.ModelSerializer):
-    course = serializers.PrimaryKeyRelatedField(
-        queryset=CourseModel.objects.all())
-    parent_module = serializers.PrimaryKeyRelatedField(
-        queryset=ParentModule.objects.all())
+    # course = serializers.PrimaryKeyRelatedField(
+    #     queryset=CourseModel.objects.all())
+    # parent_module = serializers.PrimaryKeyRelatedField(
+    #     queryset=ParentModule.objects.all())
+    course = CourseSerializer()
+    parent_module = ParentModuleSerializer()
 
     class Meta:
         model = ModuleModel
@@ -54,10 +56,12 @@ class ModuleSerializer(serializers.ModelSerializer):
 
 
 class VideoSerializer(serializers.ModelSerializer):
-    # module = ModuleSerializer(read_only=True)
-    module = serializers.PrimaryKeyRelatedField(
-        queryset=ModuleModel.objects.all())
+    module = ModuleSerializer()
+
+    # module = serializers.PrimaryKeyRelatedField(
+    #     queryset=ModuleModel.objects.all())
 
     class Meta:
         model = VideoModel
-        fields = ['id', 'module', 'title', 'video_url', 'duration']
+        fields = ['id', 'module', 'title',
+                  'video_url', 'duration']
