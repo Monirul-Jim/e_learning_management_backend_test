@@ -41,27 +41,70 @@ class ParentModuleSerializer(serializers.ModelSerializer):
         fields = ['id', 'title']
 
 
+# class ModuleSerializer(serializers.ModelSerializer):
+#     # course = serializers.PrimaryKeyRelatedField(
+#     #     queryset=CourseModel.objects.all())
+#     # parent_module = serializers.PrimaryKeyRelatedField(
+#     #     queryset=ParentModule.objects.all())
+#     course = CourseSerializer()
+#     parent_module = ParentModuleSerializer()
+
+#     class Meta:
+#         model = ModuleModel
+#         fields = ['id', 'course', 'title',
+#                   'parent_module', 'description']
+# class ModuleSerializer(serializers.ModelSerializer):
+#     course = serializers.PrimaryKeyRelatedField(
+#         queryset=CourseModel.objects.all()
+#     )
+#     parent_module = serializers.PrimaryKeyRelatedField(
+#         queryset=ParentModule.objects.all(), required=False
+#     )
+
+#     class Meta:
+#         model = ModuleModel
+#         fields = ['id', 'course', 'title', 'parent_module', 'description']
 class ModuleSerializer(serializers.ModelSerializer):
-    # course = serializers.PrimaryKeyRelatedField(
-    #     queryset=CourseModel.objects.all())
-    # parent_module = serializers.PrimaryKeyRelatedField(
-    #     queryset=ParentModule.objects.all())
-    course = CourseSerializer()
-    parent_module = ParentModuleSerializer()
+    course = serializers.PrimaryKeyRelatedField(
+        queryset=CourseModel.objects.all(), write_only=True)
+    course_details = CourseSerializer(read_only=True, source='course')
+    parent_module = serializers.PrimaryKeyRelatedField(
+        queryset=ParentModule.objects.all(), required=False, write_only=True)
+    parent_module_details = ParentModuleSerializer(
+        read_only=True, source='parent_module')
 
     class Meta:
         model = ModuleModel
-        fields = ['id', 'course', 'title',
-                  'parent_module', 'description']
+        fields = ['id', 'course', 'course_details', 'title',
+                  'parent_module', 'parent_module_details', 'description']
+
+    def to_representation(self, instance):
+        representation = super().to_representation(instance)
+        representation.pop('course', None)
+        representation.pop('parent_module', None)
+        return representation
+
+
+# class VideoSerializer(serializers.ModelSerializer):
+#     module = ModuleSerializer()
+
+#     # module = serializers.PrimaryKeyRelatedField(
+#     #     queryset=ModuleModel.objects.all())
+
+#     class Meta:
+#         model = VideoModel
+#         fields = ['id', 'module', 'title',
+#                   'video_url', 'duration']
 
 
 class VideoSerializer(serializers.ModelSerializer):
-    module = ModuleSerializer()
-
-    # module = serializers.PrimaryKeyRelatedField(
-    #     queryset=ModuleModel.objects.all())
+    module = serializers.PrimaryKeyRelatedField(
+        queryset=ModuleModel.objects.all(), write_only=True
+    )  # Write-only field to accept module ID
+    module_details = ModuleSerializer(
+        source='module', read_only=True)  # Read-only nested field
 
     class Meta:
         model = VideoModel
-        fields = ['id', 'module', 'title',
-                  'video_url', 'duration']
+        fields = ['id', 'title', 'video_url',
+                  'duration', 'module', 'module_details']

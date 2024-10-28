@@ -226,22 +226,6 @@
         "documentation": {}
     },
     {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -1168,15 +1152,6 @@
         "documentation": {}
     },
     {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "learning.migrations.0002_parentmodule_alter_modulemodel_parent_module",
-        "description": "learning.migrations.0002_parentmodule_alter_modulemodel_parent_module",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('learning', '0001_initial'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='ParentModule',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('title', models.CharField(max_length=300)),",
-        "detail": "learning.migrations.0002_parentmodule_alter_modulemodel_parent_module",
-        "documentation": {}
-    },
-    {
         "label": "CategoryModelAdmin",
         "kind": 6,
         "importPath": "learning.admin",
@@ -1289,7 +1264,7 @@
         "kind": 6,
         "importPath": "learning.serializers",
         "description": "learning.serializers",
-        "peekOfCode": "class ParentModuleSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = ParentModule\n        fields = ['id', 'title']\nclass ModuleSerializer(serializers.ModelSerializer):\n    # course = serializers.PrimaryKeyRelatedField(\n    #     queryset=CourseModel.objects.all())\n    # parent_module = serializers.PrimaryKeyRelatedField(\n    #     queryset=ParentModule.objects.all())\n    course = CourseSerializer()",
+        "peekOfCode": "class ParentModuleSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = ParentModule\n        fields = ['id', 'title']\n# class ModuleSerializer(serializers.ModelSerializer):\n#     # course = serializers.PrimaryKeyRelatedField(\n#     #     queryset=CourseModel.objects.all())\n#     # parent_module = serializers.PrimaryKeyRelatedField(\n#     #     queryset=ParentModule.objects.all())\n#     course = CourseSerializer()",
         "detail": "learning.serializers",
         "documentation": {}
     },
@@ -1298,7 +1273,7 @@
         "kind": 6,
         "importPath": "learning.serializers",
         "description": "learning.serializers",
-        "peekOfCode": "class ModuleSerializer(serializers.ModelSerializer):\n    # course = serializers.PrimaryKeyRelatedField(\n    #     queryset=CourseModel.objects.all())\n    # parent_module = serializers.PrimaryKeyRelatedField(\n    #     queryset=ParentModule.objects.all())\n    course = CourseSerializer()\n    parent_module = ParentModuleSerializer()\n    class Meta:\n        model = ModuleModel\n        fields = ['id', 'course', 'title',",
+        "peekOfCode": "class ModuleSerializer(serializers.ModelSerializer):\n    course = serializers.PrimaryKeyRelatedField(\n        queryset=CourseModel.objects.all(), write_only=True)\n    course_details = CourseSerializer(read_only=True, source='course')\n    parent_module = serializers.PrimaryKeyRelatedField(\n        queryset=ParentModule.objects.all(), required=False, write_only=True)\n    parent_module_details = ParentModuleSerializer(\n        read_only=True, source='parent_module')\n    class Meta:\n        model = ModuleModel",
         "detail": "learning.serializers",
         "documentation": {}
     },
@@ -1307,7 +1282,7 @@
         "kind": 6,
         "importPath": "learning.serializers",
         "description": "learning.serializers",
-        "peekOfCode": "class VideoSerializer(serializers.ModelSerializer):\n    module = ModuleSerializer()\n    # module = serializers.PrimaryKeyRelatedField(\n    #     queryset=ModuleModel.objects.all())\n    class Meta:\n        model = VideoModel\n        fields = ['id', 'module', 'title',\n                  'video_url', 'duration']",
+        "peekOfCode": "class VideoSerializer(serializers.ModelSerializer):\n    module = serializers.PrimaryKeyRelatedField(\n        queryset=ModuleModel.objects.all(), write_only=True\n    )  # Write-only field to accept module ID\n    module_details = ModuleSerializer(\n        source='module', read_only=True)  # Read-only nested field\n    class Meta:\n        model = VideoModel\n        fields = ['id', 'title', 'video_url',\n                  'duration', 'module', 'module_details']",
         "detail": "learning.serializers",
         "documentation": {}
     },
