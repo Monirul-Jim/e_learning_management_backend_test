@@ -1408,7 +1408,7 @@
         "kind": 6,
         "importPath": "payments.serializer",
         "description": "payments.serializer",
-        "peekOfCode": "class UserSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = User\n        fields = ['id', 'email', 'first_name',\n                  'last_name']\nclass CourseSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = CourseModel\n        fields = ['id', 'title', 'description',\n                  'price']",
+        "peekOfCode": "class UserSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = User\n        fields = ['id', 'email', 'first_name',\n                  'last_name']\nclass CourseSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = CourseModel\n        fields = ['id', 'title', 'description', 'image',\n                  'price']",
         "detail": "payments.serializer",
         "documentation": {}
     },
@@ -1417,7 +1417,7 @@
         "kind": 6,
         "importPath": "payments.serializer",
         "description": "payments.serializer",
-        "peekOfCode": "class CourseSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = CourseModel\n        fields = ['id', 'title', 'description',\n                  'price']\nclass PurchaseOrderSerializer(serializers.ModelSerializer):\n    user = UserSerializer()\n    course = CourseSerializer()\n    class Meta:\n        model = PurchaseOrderModel",
+        "peekOfCode": "class CourseSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = CourseModel\n        fields = ['id', 'title', 'description', 'image',\n                  'price']\nclass PurchaseOrderSerializer(serializers.ModelSerializer):\n    user = UserSerializer()\n    course = CourseSerializer()\n    class Meta:\n        model = PurchaseOrderModel",
         "detail": "payments.serializer",
         "documentation": {}
     },
