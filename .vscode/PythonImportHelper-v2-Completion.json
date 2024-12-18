@@ -922,7 +922,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = os.getenv('SECRET_KEY')\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = ['e-learning-social-platform.onrender.com']\n# Application definition\nINSTALLED_APPS = [",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = os.getenv('SECRET_KEY')\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\n# ALLOWED_HOSTS = []\nALLOWED_HOSTS = ['e-learning-social-platform.onrender.com']\n# Application definition",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -931,7 +931,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "SECRET_KEY = os.getenv('SECRET_KEY')\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = ['e-learning-social-platform.onrender.com']\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
+        "peekOfCode": "SECRET_KEY = os.getenv('SECRET_KEY')\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\n# ALLOWED_HOSTS = []\nALLOWED_HOSTS = ['e-learning-social-platform.onrender.com']\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -940,7 +940,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = ['e-learning-social-platform.onrender.com']\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "peekOfCode": "DEBUG = True\n# ALLOWED_HOSTS = []\nALLOWED_HOSTS = ['e-learning-social-platform.onrender.com']\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -1021,7 +1021,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "CORS_ALLOWED_ORIGINS = [\n    \"http://localhost:5173\",\n]\nCORS_ALLOW_CREDENTIALS = True\n# Internationalization\n# https://docs.djangoproject.com/en/5.1/topics/i18n/\nLANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True",
+        "peekOfCode": "CORS_ALLOWED_ORIGINS = [\n    \"https://e-learning-management-beige.vercel.app/\",\n]\nCORS_ALLOW_CREDENTIALS = True\n# Internationalization\n# https://docs.djangoproject.com/en/5.1/topics/i18n/\nLANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -1030,7 +1030,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "CORS_ALLOW_CREDENTIALS = True\n# Internationalization\n# https://docs.djangoproject.com/en/5.1/topics/i18n/\nLANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\nSITE_URL = 'http://localhost:5173'\nSTRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')\n# settings.py",
+        "peekOfCode": "CORS_ALLOW_CREDENTIALS = True\n# Internationalization\n# https://docs.djangoproject.com/en/5.1/topics/i18n/\nLANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\nSITE_URL = 'https://e-learning-management-beige.vercel.app/'\nSTRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')\n# settings.py",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -1039,7 +1039,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\nSITE_URL = 'http://localhost:5173'\nSTRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\nSITE_URL = 'https://e-learning-management-beige.vercel.app/'\nSTRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -1048,7 +1048,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\nSITE_URL = 'http://localhost:5173'\nSTRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',  # Only for authentication",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\nSITE_URL = 'https://e-learning-management-beige.vercel.app/'\nSTRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',  # Only for authentication",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -1057,7 +1057,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\nSITE_URL = 'http://localhost:5173'\nSTRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',  # Only for authentication\n    ),",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\nSITE_URL = 'https://e-learning-management-beige.vercel.app/'\nSTRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',  # Only for authentication\n    ),",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -1066,7 +1066,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "USE_TZ = True\nSITE_URL = 'http://localhost:5173'\nSTRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',  # Only for authentication\n    ),\n    'DEFAULT_PERMISSION_CLASSES': (",
+        "peekOfCode": "USE_TZ = True\nSITE_URL = 'https://e-learning-management-beige.vercel.app/'\nSTRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',  # Only for authentication\n    ),\n    'DEFAULT_PERMISSION_CLASSES': (",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -1075,7 +1075,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "SITE_URL = 'http://localhost:5173'\nSTRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',  # Only for authentication\n    ),\n    'DEFAULT_PERMISSION_CLASSES': (\n        # Allow access by default; customize as needed",
+        "peekOfCode": "SITE_URL = 'https://e-learning-management-beige.vercel.app/'\nSTRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',  # Only for authentication\n    ),\n    'DEFAULT_PERMISSION_CLASSES': (\n        # Allow access by default; customize as needed",
         "detail": "e_learning.settings",
         "documentation": {}
     },
