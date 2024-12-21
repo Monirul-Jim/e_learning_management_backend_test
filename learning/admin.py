@@ -3,7 +3,6 @@ from learning.models import (CategoryModel, CourseModel, ModuleModel,
                              VideoModel,
                              ParentModule,
                              QuizModel,
-                             #  ExamModel,
                              #  AnswerModel,
                              )
 
