@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from learning.models import CategoryModel, CourseModel, ModuleModel, ParentModule, VideoModel
+from learning.models import CategoryModel, CourseModel, ModuleModel, ParentModule, VideoModel, QuizModel
 
 
 class CategorySerializers(serializers.ModelSerializer):
@@ -108,3 +108,40 @@ class VideoSerializer(serializers.ModelSerializer):
         model = VideoModel
         fields = ['id', 'title', 'video_url',
                   'duration', 'module', 'module_details']
+
+
+class QuizSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = QuizModel
+        fields = ['id', 'module', 'title', 'questions']
+
+    def create(self, validated_data):
+        questions_data = validated_data.pop('questions', None)
+
+        if not isinstance(questions_data, dict):
+            raise serializers.ValidationError(
+                {"questions": "Questions should be a dictionary."})
+
+        quiz = QuizModel.objects.create(
+            **validated_data,
+            questions=questions_data
+        )
+        return quiz
+
+    def update(self, instance, validated_data):
+        questions_data = validated_data.pop('questions', None)
+
+        if questions_data:
+            instance.questions = questions_data
+
+        # Update other fields
+        instance.module = validated_data.get('module', instance.module)
+        instance.title = validated_data.get('title', instance.title)
+        instance.save()
+
+        return instance
+
+    def to_representation(self, instance):
+        representation = super().to_representation(instance)
+        representation['questions'] = instance.questions
+        return representation

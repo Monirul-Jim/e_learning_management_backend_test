@@ -202,6 +202,14 @@
         "documentation": {}
     },
     {
+        "label": "QuizViewSets",
+        "importPath": "learning.views",
+        "description": "learning.views",
+        "isExtraImport": true,
+        "detail": "learning.views",
+        "documentation": {}
+    },
+    {
         "label": "get_wsgi_application",
         "importPath": "django.core.wsgi",
         "description": "django.core.wsgi",
@@ -307,7 +315,15 @@
         "documentation": {}
     },
     {
-        "label": "ParentModule\r\n                             #  QuizModel",
+        "label": "ParentModule",
+        "importPath": "learning.models",
+        "description": "learning.models",
+        "isExtraImport": true,
+        "detail": "learning.models",
+        "documentation": {}
+    },
+    {
+        "label": "QuizModel",
         "importPath": "learning.models",
         "description": "learning.models",
         "isExtraImport": true,
@@ -371,6 +387,14 @@
         "documentation": {}
     },
     {
+        "label": "QuizModel",
+        "importPath": "learning.models",
+        "description": "learning.models",
+        "isExtraImport": true,
+        "detail": "learning.models",
+        "documentation": {}
+    },
+    {
         "label": "CategoryModel",
         "importPath": "learning.models",
         "description": "learning.models",
@@ -404,6 +428,14 @@
     },
     {
         "label": "VideoModel",
+        "importPath": "learning.models",
+        "description": "learning.models",
+        "isExtraImport": true,
+        "detail": "learning.models",
+        "documentation": {}
+    },
+    {
+        "label": "QuizModel",
         "importPath": "learning.models",
         "description": "learning.models",
         "isExtraImport": true,
@@ -763,6 +795,14 @@
         "documentation": {}
     },
     {
+        "label": "QuizSerializer",
+        "importPath": "learning.serializers",
+        "description": "learning.serializers",
+        "isExtraImport": true,
+        "detail": "learning.serializers",
+        "documentation": {}
+    },
+    {
         "label": "send_response",
         "importPath": "learning.utils",
         "description": "learning.utils",
@@ -922,7 +962,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = os.getenv('SECRET_KEY')\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\n# ALLOWED_HOSTS = []\nALLOWED_HOSTS = ['e-learning-social-platform.onrender.com']\n# Application definition",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = os.getenv('SECRET_KEY')\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# ALLOWED_HOSTS = ['e-learning-social-platform.onrender.com']\n# Application definition",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -931,7 +971,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "SECRET_KEY = os.getenv('SECRET_KEY')\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\n# ALLOWED_HOSTS = []\nALLOWED_HOSTS = ['e-learning-social-platform.onrender.com']\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',",
+        "peekOfCode": "SECRET_KEY = os.getenv('SECRET_KEY')\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# ALLOWED_HOSTS = ['e-learning-social-platform.onrender.com']\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -940,7 +980,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "DEBUG = True\n# ALLOWED_HOSTS = []\nALLOWED_HOSTS = ['e-learning-social-platform.onrender.com']\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\n# ALLOWED_HOSTS = ['e-learning-social-platform.onrender.com']\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -949,7 +989,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "ALLOWED_HOSTS = ['e-learning-social-platform.onrender.com']\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rest_framework',",
+        "peekOfCode": "ALLOWED_HOSTS = []\n# ALLOWED_HOSTS = ['e-learning-social-platform.onrender.com']\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -994,7 +1034,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "WSGI_APPLICATION = 'e_learning.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/5.1/ref/settings/#databases\n# DATABASES = {\n#     'default': {\n#         'ENGINE': 'django.db.backends.sqlite3',\n#         'NAME': BASE_DIR / 'db.sqlite3',\n#     }\n# }\nDATABASES = {",
+        "peekOfCode": "WSGI_APPLICATION = 'e_learning.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/5.1/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# DATABASES = {",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -1003,7 +1043,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "DATABASES = {\n    'default': dj_database_url.parse(\n        os.getenv('DATABASE_URL')\n    )\n}\n# Password validation\n# https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# DATABASES = {\n#     'default': dj_database_url.parse(\n#         os.getenv('DATABASE_URL')\n#     )",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -1021,7 +1061,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "CORS_ALLOWED_ORIGINS = [\n    \"https://e-learning-management-beige.vercel.app/\",\n]\nCORS_ALLOW_CREDENTIALS = True\n# Internationalization\n# https://docs.djangoproject.com/en/5.1/topics/i18n/\nLANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True",
+        "peekOfCode": "CORS_ALLOWED_ORIGINS = [\n    \"http://localhost:5173\",\n]\n# CORS_ALLOWED_ORIGINS = [\n#     \"https://e-learning-management-beige.vercel.app/\",\n# ]\nCORS_ALLOW_CREDENTIALS = True\n# Internationalization\n# https://docs.djangoproject.com/en/5.1/topics/i18n/\nLANGUAGE_CODE = 'en-us'",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -1030,7 +1070,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "CORS_ALLOW_CREDENTIALS = True\n# Internationalization\n# https://docs.djangoproject.com/en/5.1/topics/i18n/\nLANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\nSITE_URL = 'https://e-learning-management-beige.vercel.app/'\nSTRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')\n# settings.py",
+        "peekOfCode": "CORS_ALLOW_CREDENTIALS = True\n# Internationalization\n# https://docs.djangoproject.com/en/5.1/topics/i18n/\nLANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\nSITE_URL = 'http://localhost:5173'\n# SITE_URL = 'https://e-learning-management-beige.vercel.app/'\nSTRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -1039,7 +1079,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\nSITE_URL = 'https://e-learning-management-beige.vercel.app/'\nSTRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\nSITE_URL = 'http://localhost:5173'\n# SITE_URL = 'https://e-learning-management-beige.vercel.app/'\nSTRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -1048,7 +1088,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\nSITE_URL = 'https://e-learning-management-beige.vercel.app/'\nSTRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',  # Only for authentication",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\nSITE_URL = 'http://localhost:5173'\n# SITE_URL = 'https://e-learning-management-beige.vercel.app/'\nSTRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -1057,7 +1097,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\nSITE_URL = 'https://e-learning-management-beige.vercel.app/'\nSTRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',  # Only for authentication\n    ),",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\nSITE_URL = 'http://localhost:5173'\n# SITE_URL = 'https://e-learning-management-beige.vercel.app/'\nSTRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',  # Only for authentication",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -1066,7 +1106,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "USE_TZ = True\nSITE_URL = 'https://e-learning-management-beige.vercel.app/'\nSTRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',  # Only for authentication\n    ),\n    'DEFAULT_PERMISSION_CLASSES': (",
+        "peekOfCode": "USE_TZ = True\nSITE_URL = 'http://localhost:5173'\n# SITE_URL = 'https://e-learning-management-beige.vercel.app/'\nSTRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',  # Only for authentication\n    ),",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -1075,7 +1115,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "SITE_URL = 'https://e-learning-management-beige.vercel.app/'\nSTRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',  # Only for authentication\n    ),\n    'DEFAULT_PERMISSION_CLASSES': (\n        # Allow access by default; customize as needed",
+        "peekOfCode": "SITE_URL = 'http://localhost:5173'\n# SITE_URL = 'https://e-learning-management-beige.vercel.app/'\nSTRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',  # Only for authentication\n    ),\n    'DEFAULT_PERMISSION_CLASSES': (",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -1174,7 +1214,7 @@
         "kind": 6,
         "importPath": "learning.admin",
         "description": "learning.admin",
-        "peekOfCode": "class ModuleAdmin(admin.ModelAdmin):\n    list_display = ('title', 'course', 'parent_module')\n    search_fields = ('title', 'course__title')\n# Registering VideoModel\n@admin.register(VideoModel)\nclass VideoAdmin(admin.ModelAdmin):\n    list_display = ('title', 'module', 'video_url')\n    search_fields = ('title', 'module__title')\n# # Registering QuizModel\n# @admin.register(QuizModel)",
+        "peekOfCode": "class ModuleAdmin(admin.ModelAdmin):\n    list_display = ('title', 'course', 'parent_module')\n    search_fields = ('title', 'course__title')\n# Registering VideoModel\n@admin.register(VideoModel)\nclass VideoAdmin(admin.ModelAdmin):\n    list_display = ('title', 'module', 'video_url')\n    search_fields = ('title', 'module__title')\n@admin.register(QuizModel)\nclass QuizAdmin(admin.ModelAdmin):",
         "detail": "learning.admin",
         "documentation": {}
     },
@@ -1183,7 +1223,16 @@
         "kind": 6,
         "importPath": "learning.admin",
         "description": "learning.admin",
-        "peekOfCode": "class VideoAdmin(admin.ModelAdmin):\n    list_display = ('title', 'module', 'video_url')\n    search_fields = ('title', 'module__title')\n# # Registering QuizModel\n# @admin.register(QuizModel)\n# class QuizAdmin(admin.ModelAdmin):\n#     list_display = ('title', 'module')\n#     search_fields = ('title', 'module__title')\n# # Registering ExamModel\n# @admin.register(ExamModel)",
+        "peekOfCode": "class VideoAdmin(admin.ModelAdmin):\n    list_display = ('title', 'module', 'video_url')\n    search_fields = ('title', 'module__title')\n@admin.register(QuizModel)\nclass QuizAdmin(admin.ModelAdmin):\n    list_display = ['title', 'module']",
+        "detail": "learning.admin",
+        "documentation": {}
+    },
+    {
+        "label": "QuizAdmin",
+        "kind": 6,
+        "importPath": "learning.admin",
+        "description": "learning.admin",
+        "peekOfCode": "class QuizAdmin(admin.ModelAdmin):\n    list_display = ['title', 'module']",
         "detail": "learning.admin",
         "documentation": {}
     },
@@ -1246,7 +1295,16 @@
         "kind": 6,
         "importPath": "learning.models",
         "description": "learning.models",
-        "peekOfCode": "class VideoModel(models.Model):\n    module = models.ForeignKey(\n        ModuleModel, on_delete=models.CASCADE, related_name='videos')\n    title = models.CharField(max_length=100)\n    video_url = models.URLField(max_length=500)\n    duration = models.DurationField()\n    def __str__(self):\n        return self.title\n# class QuizModel(models.Model):\n#     module = models.ForeignKey(",
+        "peekOfCode": "class VideoModel(models.Model):\n    module = models.ForeignKey(\n        ModuleModel, on_delete=models.CASCADE, related_name='videos')\n    title = models.CharField(max_length=100)\n    video_url = models.URLField(max_length=500)\n    duration = models.DurationField()\n    def __str__(self):\n        return self.title\nclass QuizModel(models.Model):\n    module = models.ForeignKey(",
+        "detail": "learning.models",
+        "documentation": {}
+    },
+    {
+        "label": "QuizModel",
+        "kind": 6,
+        "importPath": "learning.models",
+        "description": "learning.models",
+        "peekOfCode": "class QuizModel(models.Model):\n    module = models.ForeignKey(\n        ModuleModel, on_delete=models.CASCADE, related_name='quizzes', null=True, blank=True)\n    title = models.CharField(max_length=100)\n    questions = models.JSONField(\n        help_text=\"Stores the question, options, and correct answer in JSON format\", blank=True, null=True\n    )\n    def __str__(self):\n        return self.title",
         "detail": "learning.models",
         "documentation": {}
     },
@@ -1296,11 +1354,20 @@
         "documentation": {}
     },
     {
+        "label": "QuizSerializer",
+        "kind": 6,
+        "importPath": "learning.serializers",
+        "description": "learning.serializers",
+        "peekOfCode": "class QuizSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = QuizModel\n        fields = ['id', 'module', 'title', 'questions']\n    def create(self, validated_data):\n        questions_data = validated_data.pop('questions', None)\n        if not isinstance(questions_data, dict):\n            raise serializers.ValidationError(\n                {\"questions\": \"Questions should be a dictionary.\"})\n        quiz = QuizModel.objects.create(",
+        "detail": "learning.serializers",
+        "documentation": {}
+    },
+    {
         "label": "router",
         "kind": 5,
         "importPath": "learning.urls",
         "description": "learning.urls",
-        "peekOfCode": "router = routers.DefaultRouter()\nrouter.register('category', CategoryViewSets)\nrouter.register('courses', CourseViewSets)\nrouter.register('modules', ModuleViewSets)\nrouter.register('videos', VideoViewSets)\nrouter.register('parent-modules', ParentModuleViewSets)\nurlpatterns = [\n    path('', include(router.urls)),\n]",
+        "peekOfCode": "router = routers.DefaultRouter()\nrouter.register('category', CategoryViewSets)\nrouter.register('courses', CourseViewSets)\nrouter.register('modules', ModuleViewSets)\nrouter.register('videos', VideoViewSets)\nrouter.register('parent-modules', ParentModuleViewSets)\nrouter.register('quizzes', QuizViewSets, basename='quiz')\nurlpatterns = [\n    path('', include(router.urls)),\n]",
         "detail": "learning.urls",
         "documentation": {}
     },
@@ -1373,6 +1440,15 @@
         "importPath": "learning.views",
         "description": "learning.views",
         "peekOfCode": "class VideoViewSets(viewsets.ModelViewSet):\n    queryset = VideoModel.objects.all()\n    serializer_class = VideoSerializer\n    def create(self, request, *args, **kwargs):\n        serializer = self.get_serializer(data=request.data)\n        serializer.is_valid(raise_exception=True)\n        self.perform_create(serializer)\n        return send_response(\n            success=True,\n            message=\"Video created successfully\",",
+        "detail": "learning.views",
+        "documentation": {}
+    },
+    {
+        "label": "QuizViewSets",
+        "kind": 6,
+        "importPath": "learning.views",
+        "description": "learning.views",
+        "peekOfCode": "class QuizViewSets(viewsets.ModelViewSet):\n    queryset = QuizModel.objects.all()\n    serializer_class = QuizSerializer\n    def create(self, request, *args, **kwargs):\n        serializer = self.get_serializer(data=request.data)\n        serializer.is_valid(raise_exception=True)\n        self.perform_create(serializer)\n        return send_response(\n            success=True,\n            message=\"Quiz created successfully\",",
         "detail": "learning.views",
         "documentation": {}
     },

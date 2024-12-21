@@ -1,7 +1,7 @@
 from django.views.decorators.csrf import csrf_exempt
 from rest_framework import viewsets, status
-from learning.models import CategoryModel, CourseModel, ModuleModel, ParentModule, VideoModel
-from learning.serializers import CategorySerializers, CourseSerializer, ModuleSerializer, ParentModuleSerializer, VideoSerializer
+from learning.models import CategoryModel, CourseModel, ModuleModel, ParentModule, VideoModel, QuizModel
+from learning.serializers import CategorySerializers, CourseSerializer, ModuleSerializer, ParentModuleSerializer, VideoSerializer, QuizSerializer
 from django.http import JsonResponse
 from learning.utils import send_response
 from django.http import JsonResponse
@@ -186,6 +186,72 @@ class VideoViewSets(viewsets.ModelViewSet):
             message="Single Video retrieved successfully",
             data=serializer.data,
             status_code=status.HTTP_200_OK
+        )
+
+
+class QuizViewSets(viewsets.ModelViewSet):
+    queryset = QuizModel.objects.all()
+    serializer_class = QuizSerializer
+
+    def create(self, request, *args, **kwargs):
+
+        serializer = self.get_serializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        self.perform_create(serializer)
+        return send_response(
+            success=True,
+            message="Quiz created successfully",
+            data=serializer.data,
+            status_code=status.HTTP_201_CREATED
+        )
+
+    def list(self, request, *args, **kwargs):
+
+        queryset = self.get_queryset()
+        serializer = self.get_serializer(queryset, many=True)
+        return send_response(
+            success=True,
+            message="Quizzes retrieved successfully",
+            data=serializer.data,
+            status_code=status.HTTP_200_OK
+        )
+
+    def retrieve(self, request, *args, **kwargs):
+
+        instance = self.get_object()
+        serializer = self.get_serializer(instance)
+        return send_response(
+            success=True,
+            message="Single Quiz retrieved successfully",
+            data=serializer.data,
+            status_code=status.HTTP_200_OK
+        )
+
+    def update(self, request, *args, **kwargs):
+
+        partial = kwargs.pop('partial', True)
+        instance = self.get_object()
+        serializer = self.get_serializer(
+            instance, data=request.data, partial=partial)
+        serializer.is_valid(raise_exception=True)
+        self.perform_update(serializer)
+        return send_response(
+            success=True,
+            message="Quiz updated successfully",
+            data=serializer.data,
+            status_code=status.HTTP_200_OK
+        )
+
+    def destroy(self, request, *args, **kwargs):
+        """
+        Delete a quiz.
+        """
+        instance = self.get_object()
+        self.perform_destroy(instance)
+        return send_response(
+            success=True,
+            message="Quiz deleted successfully",
+            status_code=status.HTTP_204_NO_CONTENT
         )
 
 

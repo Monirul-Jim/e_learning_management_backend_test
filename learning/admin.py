@@ -1,8 +1,8 @@
 from django.contrib import admin
 from learning.models import (CategoryModel, CourseModel, ModuleModel,
                              VideoModel,
-                             ParentModule
-                             #  QuizModel,
+                             ParentModule,
+                             QuizModel,
                              #  ExamModel,
                              #  AnswerModel,
                              )
@@ -30,23 +30,6 @@ class VideoAdmin(admin.ModelAdmin):
     search_fields = ('title', 'module__title')
 
 
-# # Registering QuizModel
-# @admin.register(QuizModel)
-# class QuizAdmin(admin.ModelAdmin):
-#     list_display = ('title', 'module')
-#     search_fields = ('title', 'module__title')
-
-
-# # Registering ExamModel
-# @admin.register(ExamModel)
-# class ExamAdmin(admin.ModelAdmin):
-#     list_display = ('title', 'module', 'submission_deadline')
-#     search_fields = ('title', 'module__title')
-
-
-# # Registering AnswerModel
-# @admin.register(AnswerModel)
-# class AnswerAdmin(admin.ModelAdmin):
-#     list_display = ('user', 'exam', 'submitted_at')
-#     search_fields = ('user__username', 'exam__title')
-#     readonly_fields = ('submitted_at',)
+@admin.register(QuizModel)
+class QuizAdmin(admin.ModelAdmin):
+    list_display = ['title', 'module']
