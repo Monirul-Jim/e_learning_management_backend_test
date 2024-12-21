@@ -259,6 +259,30 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -1223,6 +1247,24 @@
         "description": "learning.migrations.0002_quizmodel",
         "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('learning', '0001_initial'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='QuizModel',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('title', models.CharField(max_length=100)),",
         "detail": "learning.migrations.0002_quizmodel",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "learning.migrations.0003_quizmodel_quiz",
+        "description": "learning.migrations.0003_quizmodel_quiz",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('learning', '0002_quizmodel'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='quizmodel',\n            name='quiz',\n            field=models.CharField(blank=True, max_length=100, null=True),\n        ),",
+        "detail": "learning.migrations.0003_quizmodel_quiz",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "learning.migrations.0004_remove_quizmodel_quiz",
+        "description": "learning.migrations.0004_remove_quizmodel_quiz",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('learning', '0003_quizmodel_quiz'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='quizmodel',\n            name='quiz',\n        ),\n    ]",
+        "detail": "learning.migrations.0004_remove_quizmodel_quiz",
         "documentation": {}
     },
     {

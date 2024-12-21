@@ -157,15 +157,6 @@ class VideoViewSets(viewsets.ModelViewSet):
             status_code=status.HTTP_201_CREATED
         )
 
-    # def list(self, request, *args, **kwargs):
-    #     queryset = self.get_queryset()
-    #     serializer = self.get_serializer(queryset, many=True)
-    #     return send_response(
-    #         success=True,
-    #         message="Videos retrieved successfully",
-    #         data=serializer.data,
-    #         status_code=status.HTTP_200_OK
-    #     )
     @action(detail=False, methods=['get'], url_path='course/(?P<course_id>[^/.]+)')
     def list_course_videos(self, request, course_id=None):
         # Filter videos by course ID
