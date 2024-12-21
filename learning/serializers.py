@@ -111,9 +111,11 @@ class VideoSerializer(serializers.ModelSerializer):
 
 
 class QuizSerializer(serializers.ModelSerializer):
+    module_title = serializers.SerializerMethodField()
+
     class Meta:
         model = QuizModel
-        fields = ['id', 'module', 'title', 'questions']
+        fields = ['id', 'module', 'module_title', 'title', 'questions']
 
     def create(self, validated_data):
         questions_data = validated_data.pop('questions', None)
@@ -142,6 +144,16 @@ class QuizSerializer(serializers.ModelSerializer):
         return instance
 
     def to_representation(self, instance):
+        # Get the base representation first
         representation = super().to_representation(instance)
-        representation['questions'] = instance.questions
+
+        # Add the custom `module_title` field to the representation
+        representation['module_title'] = self.get_module_title(instance)
+
         return representation
+
+    def get_module_title(self, obj):
+        # Get the title of the related module (if available)
+        if obj.module:
+            return obj.module.title
+        return None

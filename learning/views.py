@@ -193,6 +193,15 @@ class QuizViewSets(viewsets.ModelViewSet):
     queryset = QuizModel.objects.all()
     serializer_class = QuizSerializer
 
+    def get_queryset(self):
+        queryset = super().get_queryset()
+        module_title = self.request.query_params.get(
+            'module_title', None)  # Get 'module_title' query parameter
+        if module_title:
+            # Filter quizzes based on the module title (case insensitive)
+            queryset = queryset.filter(module__title__iexact=module_title)
+        return queryset
+
     def create(self, request, *args, **kwargs):
 
         serializer = self.get_serializer(data=request.data)

@@ -243,6 +243,22 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -1201,6 +1217,15 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "learning.migrations.0002_quizmodel",
+        "description": "learning.migrations.0002_quizmodel",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('learning', '0001_initial'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='QuizModel',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('title', models.CharField(max_length=100)),",
+        "detail": "learning.migrations.0002_quizmodel",
+        "documentation": {}
+    },
+    {
         "label": "CategoryModelAdmin",
         "kind": 6,
         "importPath": "learning.admin",
@@ -1358,7 +1383,7 @@
         "kind": 6,
         "importPath": "learning.serializers",
         "description": "learning.serializers",
-        "peekOfCode": "class QuizSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = QuizModel\n        fields = ['id', 'module', 'title', 'questions']\n    def create(self, validated_data):\n        questions_data = validated_data.pop('questions', None)\n        if not isinstance(questions_data, dict):\n            raise serializers.ValidationError(\n                {\"questions\": \"Questions should be a dictionary.\"})\n        quiz = QuizModel.objects.create(",
+        "peekOfCode": "class QuizSerializer(serializers.ModelSerializer):\n    module_title = serializers.SerializerMethodField()\n    class Meta:\n        model = QuizModel\n        fields = ['id', 'module', 'module_title', 'title', 'questions']\n    def create(self, validated_data):\n        questions_data = validated_data.pop('questions', None)\n        if not isinstance(questions_data, dict):\n            raise serializers.ValidationError(\n                {\"questions\": \"Questions should be a dictionary.\"})",
         "detail": "learning.serializers",
         "documentation": {}
     },
@@ -1448,7 +1473,7 @@
         "kind": 6,
         "importPath": "learning.views",
         "description": "learning.views",
-        "peekOfCode": "class QuizViewSets(viewsets.ModelViewSet):\n    queryset = QuizModel.objects.all()\n    serializer_class = QuizSerializer\n    def create(self, request, *args, **kwargs):\n        serializer = self.get_serializer(data=request.data)\n        serializer.is_valid(raise_exception=True)\n        self.perform_create(serializer)\n        return send_response(\n            success=True,\n            message=\"Quiz created successfully\",",
+        "peekOfCode": "class QuizViewSets(viewsets.ModelViewSet):\n    queryset = QuizModel.objects.all()\n    serializer_class = QuizSerializer\n    def get_queryset(self):\n        queryset = super().get_queryset()\n        module_title = self.request.query_params.get(\n            'module_title', None)  # Get 'module_title' query parameter\n        if module_title:\n            # Filter quizzes based on the module title (case insensitive)\n            queryset = queryset.filter(module__title__iexact=module_title)",
         "detail": "learning.views",
         "documentation": {}
     },
