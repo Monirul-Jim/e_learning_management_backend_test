@@ -30,8 +30,8 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-# ALLOWED_HOSTS = ['e-learning-social-platform.onrender.com']
+# ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['e-learning-social-platform.onrender.com']
 
 
 # Application definition
@@ -119,12 +119,12 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",
-]
 # CORS_ALLOWED_ORIGINS = [
-#     "https://e-learning-management-beige.vercel.app/",
+#     "http://localhost:5173",
 # ]
+CORS_ALLOWED_ORIGINS = [
+    "https://e-learning-management-beige.vercel.app",
+]
 CORS_ALLOW_CREDENTIALS = True
 
 # Internationalization
@@ -138,8 +138,8 @@ USE_I18N = True
 
 USE_TZ = True
 
-SITE_URL = 'http://localhost:5173'
-# SITE_URL = 'https://e-learning-management-beige.vercel.app/'
+# SITE_URL = 'http://localhost:5173'
+SITE_URL = 'https://e-learning-management-beige.vercel.app/'
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')
 # settings.py
 REST_FRAMEWORK = {

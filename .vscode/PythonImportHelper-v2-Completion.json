@@ -283,6 +283,30 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -320,6 +344,30 @@
         "description": "django.db",
         "isExtraImport": true,
         "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
         "documentation": {}
     },
     {
@@ -364,14 +412,6 @@
     },
     {
         "label": "QuizModel",
-        "importPath": "learning.models",
-        "description": "learning.models",
-        "isExtraImport": true,
-        "detail": "learning.models",
-        "documentation": {}
-    },
-    {
-        "label": "#  ExamModel",
         "importPath": "learning.models",
         "description": "learning.models",
         "isExtraImport": true,
@@ -859,22 +899,6 @@
         "documentation": {}
     },
     {
-        "label": "settings",
-        "importPath": "django.conf",
-        "description": "django.conf",
-        "isExtraImport": true,
-        "detail": "django.conf",
-        "documentation": {}
-    },
-    {
-        "label": "settings",
-        "importPath": "django.conf",
-        "description": "django.conf",
-        "isExtraImport": true,
-        "detail": "django.conf",
-        "documentation": {}
-    },
-    {
         "label": "PurchaseOrderModel",
         "importPath": "payments.models",
         "description": "payments.models",
@@ -1002,7 +1026,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = os.getenv('SECRET_KEY')\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# ALLOWED_HOSTS = ['e-learning-social-platform.onrender.com']\n# Application definition",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = os.getenv('SECRET_KEY')\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\n# ALLOWED_HOSTS = []\nALLOWED_HOSTS = ['e-learning-social-platform.onrender.com']\n# Application definition",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -1011,7 +1035,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "SECRET_KEY = os.getenv('SECRET_KEY')\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# ALLOWED_HOSTS = ['e-learning-social-platform.onrender.com']\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',",
+        "peekOfCode": "SECRET_KEY = os.getenv('SECRET_KEY')\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\n# ALLOWED_HOSTS = []\nALLOWED_HOSTS = ['e-learning-social-platform.onrender.com']\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -1020,7 +1044,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\n# ALLOWED_HOSTS = ['e-learning-social-platform.onrender.com']\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',",
+        "peekOfCode": "DEBUG = True\n# ALLOWED_HOSTS = []\nALLOWED_HOSTS = ['e-learning-social-platform.onrender.com']\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -1029,7 +1053,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "ALLOWED_HOSTS = []\n# ALLOWED_HOSTS = ['e-learning-social-platform.onrender.com']\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "peekOfCode": "ALLOWED_HOSTS = ['e-learning-social-platform.onrender.com']\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rest_framework',",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -1101,7 +1125,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "CORS_ALLOWED_ORIGINS = [\n    \"http://localhost:5173\",\n]\n# CORS_ALLOWED_ORIGINS = [\n#     \"https://e-learning-management-beige.vercel.app/\",\n# ]\nCORS_ALLOW_CREDENTIALS = True\n# Internationalization\n# https://docs.djangoproject.com/en/5.1/topics/i18n/\nLANGUAGE_CODE = 'en-us'",
+        "peekOfCode": "CORS_ALLOWED_ORIGINS = [\n    \"https://e-learning-management-beige.vercel.app\",\n]\nCORS_ALLOW_CREDENTIALS = True\n# Internationalization\n# https://docs.djangoproject.com/en/5.1/topics/i18n/\nLANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -1110,7 +1134,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "CORS_ALLOW_CREDENTIALS = True\n# Internationalization\n# https://docs.djangoproject.com/en/5.1/topics/i18n/\nLANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\nSITE_URL = 'http://localhost:5173'\n# SITE_URL = 'https://e-learning-management-beige.vercel.app/'\nSTRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')",
+        "peekOfCode": "CORS_ALLOW_CREDENTIALS = True\n# Internationalization\n# https://docs.djangoproject.com/en/5.1/topics/i18n/\nLANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# SITE_URL = 'http://localhost:5173'\nSITE_URL = 'https://e-learning-management-beige.vercel.app/'\nSTRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -1119,7 +1143,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\nSITE_URL = 'http://localhost:5173'\n# SITE_URL = 'https://e-learning-management-beige.vercel.app/'\nSTRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# SITE_URL = 'http://localhost:5173'\nSITE_URL = 'https://e-learning-management-beige.vercel.app/'\nSTRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -1128,7 +1152,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\nSITE_URL = 'http://localhost:5173'\n# SITE_URL = 'https://e-learning-management-beige.vercel.app/'\nSTRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# SITE_URL = 'http://localhost:5173'\nSITE_URL = 'https://e-learning-management-beige.vercel.app/'\nSTRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -1137,7 +1161,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\nSITE_URL = 'http://localhost:5173'\n# SITE_URL = 'https://e-learning-management-beige.vercel.app/'\nSTRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',  # Only for authentication",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# SITE_URL = 'http://localhost:5173'\nSITE_URL = 'https://e-learning-management-beige.vercel.app/'\nSTRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',  # Only for authentication",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -1146,7 +1170,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "USE_TZ = True\nSITE_URL = 'http://localhost:5173'\n# SITE_URL = 'https://e-learning-management-beige.vercel.app/'\nSTRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',  # Only for authentication\n    ),",
+        "peekOfCode": "USE_TZ = True\n# SITE_URL = 'http://localhost:5173'\nSITE_URL = 'https://e-learning-management-beige.vercel.app/'\nSTRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',  # Only for authentication\n    ),",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -1155,7 +1179,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "SITE_URL = 'http://localhost:5173'\n# SITE_URL = 'https://e-learning-management-beige.vercel.app/'\nSTRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',  # Only for authentication\n    ),\n    'DEFAULT_PERMISSION_CLASSES': (",
+        "peekOfCode": "SITE_URL = 'https://e-learning-management-beige.vercel.app/'\nSTRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',  # Only for authentication\n    ),\n    'DEFAULT_PERMISSION_CLASSES': (\n        # Allow access by default; customize as needed",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -1265,6 +1289,24 @@
         "description": "learning.migrations.0004_remove_quizmodel_quiz",
         "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('learning', '0003_quizmodel_quiz'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='quizmodel',\n            name='quiz',\n        ),\n    ]",
         "detail": "learning.migrations.0004_remove_quizmodel_quiz",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "learning.migrations.0005_quizresult",
+        "description": "learning.migrations.0005_quizresult",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('learning', '0004_remove_quizmodel_quiz'),\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='QuizResult',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
+        "detail": "learning.migrations.0005_quizresult",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "learning.migrations.0006_delete_quizresult",
+        "description": "learning.migrations.0006_delete_quizresult",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('learning', '0005_quizresult'),\n    ]\n    operations = [\n        migrations.DeleteModel(\n            name='QuizResult',\n        ),\n    ]",
+        "detail": "learning.migrations.0006_delete_quizresult",
         "documentation": {}
     },
     {
