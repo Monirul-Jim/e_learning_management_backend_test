@@ -1476,16 +1476,7 @@
         "kind": 5,
         "importPath": "learning.urls",
         "description": "learning.urls",
-        "peekOfCode": "router = routers.DefaultRouter()\nrouter.register('category', CategoryViewSets)\nrouter.register('courses', CourseViewSets)\nrouter.register('modules', ModuleViewSets)\nrouter.register('videos', VideoViewSets)\nrouter.register('parent-modules', ParentModuleViewSets)\nrouter.register('quizzes', QuizViewSets, basename='quiz')\nurlpatterns = [\n    path('', include(router.urls)),\n]",
-        "detail": "learning.urls",
-        "documentation": {}
-    },
-    {
-        "label": "urlpatterns",
-        "kind": 5,
-        "importPath": "learning.urls",
-        "description": "learning.urls",
-        "peekOfCode": "urlpatterns = [\n    path('', include(router.urls)),\n]",
+        "peekOfCode": "router = routers.DefaultRouter()\nrouter.register('category', CategoryViewSets)\nrouter.register('courses', CourseViewSets)\nrouter.register('modules', ModuleViewSets)\nrouter.register('videos', VideoViewSets)\nrouter.register('parent-modules', ParentModuleViewSets)\nrouter.register('quizzes', QuizViewSets, basename='quiz')",
         "detail": "learning.urls",
         "documentation": {}
     },
