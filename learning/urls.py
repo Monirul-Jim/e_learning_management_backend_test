@@ -9,3 +9,8 @@ router.register('modules', ModuleViewSets)
 router.register('videos', VideoViewSets)
 router.register('parent-modules', ParentModuleViewSets)
 router.register('quizzes', QuizViewSets, basename='quiz')
+
+urlpatterns = [
+    path('', include(router.urls)),
+
+]
