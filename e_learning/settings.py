@@ -32,7 +32,7 @@ DEBUG = True
 
 # ALLOWED_HOSTS = []
 # ALLOWED_HOSTS = ['e-learning-management-backend-test.onrender.com']
-ALLOWED_HOSTS = ['https://e-learning-management-backend-test.onrender.com']
+ALLOWED_HOSTS = ['e-learning-management-backend-test.onrender.com']
 
 # Application definition
 
