@@ -1134,7 +1134,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "CORS_ALLOW_CREDENTIALS = True\n# Internationalization\n# https://docs.djangoproject.com/en/5.1/topics/i18n/\nLANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# SITE_URL = 'http://localhost:5173'\nSITE_URL = 'https://e-learning-management-beige.vercel.app/'\nSTRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')",
+        "peekOfCode": "CORS_ALLOW_CREDENTIALS = True\n# Internationalization\n# https://docs.djangoproject.com/en/5.1/topics/i18n/\nLANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# SITE_URL = 'http://localhost:5173'\nSITE_URL = 'https://e-learning-management-beige.vercel.app'\nSTRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -1143,7 +1143,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# SITE_URL = 'http://localhost:5173'\nSITE_URL = 'https://e-learning-management-beige.vercel.app/'\nSTRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# SITE_URL = 'http://localhost:5173'\nSITE_URL = 'https://e-learning-management-beige.vercel.app'\nSTRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -1152,7 +1152,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# SITE_URL = 'http://localhost:5173'\nSITE_URL = 'https://e-learning-management-beige.vercel.app/'\nSTRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# SITE_URL = 'http://localhost:5173'\nSITE_URL = 'https://e-learning-management-beige.vercel.app'\nSTRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -1161,7 +1161,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# SITE_URL = 'http://localhost:5173'\nSITE_URL = 'https://e-learning-management-beige.vercel.app/'\nSTRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',  # Only for authentication",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# SITE_URL = 'http://localhost:5173'\nSITE_URL = 'https://e-learning-management-beige.vercel.app'\nSTRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',  # Only for authentication",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -1170,7 +1170,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "USE_TZ = True\n# SITE_URL = 'http://localhost:5173'\nSITE_URL = 'https://e-learning-management-beige.vercel.app/'\nSTRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',  # Only for authentication\n    ),",
+        "peekOfCode": "USE_TZ = True\n# SITE_URL = 'http://localhost:5173'\nSITE_URL = 'https://e-learning-management-beige.vercel.app'\nSTRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',  # Only for authentication\n    ),",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -1179,7 +1179,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "SITE_URL = 'https://e-learning-management-beige.vercel.app/'\nSTRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',  # Only for authentication\n    ),\n    'DEFAULT_PERMISSION_CLASSES': (\n        # Allow access by default; customize as needed",
+        "peekOfCode": "SITE_URL = 'https://e-learning-management-beige.vercel.app'\nSTRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')\n# settings.py\nREST_FRAMEWORK = {\n    'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',  # Only for authentication\n    ),\n    'DEFAULT_PERMISSION_CLASSES': (\n        # Allow access by default; customize as needed",
         "detail": "e_learning.settings",
         "documentation": {}
     },

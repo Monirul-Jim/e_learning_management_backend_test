@@ -139,7 +139,7 @@ USE_I18N = True
 USE_TZ = True
 
 # SITE_URL = 'http://localhost:5173'
-SITE_URL = 'https://e-learning-management-beige.vercel.app/'
+SITE_URL = 'https://e-learning-management-beige.vercel.app'
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')
 # settings.py
 REST_FRAMEWORK = {
