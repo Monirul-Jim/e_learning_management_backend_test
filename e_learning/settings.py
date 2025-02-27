@@ -32,8 +32,7 @@ DEBUG = True
 
 # ALLOWED_HOSTS = []
 # ALLOWED_HOSTS = ['e-learning-management-backend-test.onrender.com']
-ALLOWED_HOSTS = ['*']
-CSRF_TRUSTED_ORIGINS = ["https://*.onrender.com", "http://127.0.0.1:8000"]
+ALLOWED_HOSTS = ['https://e-learning-management-backend-test.onrender.com']
 
 # Application definition
 

@@ -1026,7 +1026,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = os.getenv('SECRET_KEY')\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\n# ALLOWED_HOSTS = []\n# ALLOWED_HOSTS = ['e-learning-management-backend-test.onrender.com']\nALLOWED_HOSTS = ['*']",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = os.getenv('SECRET_KEY')\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\n# ALLOWED_HOSTS = []\n# ALLOWED_HOSTS = ['e-learning-management-backend-test.onrender.com']\nALLOWED_HOSTS = ['https://e-learning-management-backend-test.onrender.com']",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -1035,7 +1035,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "SECRET_KEY = os.getenv('SECRET_KEY')\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\n# ALLOWED_HOSTS = []\n# ALLOWED_HOSTS = ['e-learning-management-backend-test.onrender.com']\nALLOWED_HOSTS = ['*']\nCSRF_TRUSTED_ORIGINS = [\"https://*.onrender.com\", \"http://127.0.0.1:8000\"]\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',",
+        "peekOfCode": "SECRET_KEY = os.getenv('SECRET_KEY')\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\n# ALLOWED_HOSTS = []\n# ALLOWED_HOSTS = ['e-learning-management-backend-test.onrender.com']\nALLOWED_HOSTS = ['https://e-learning-management-backend-test.onrender.com']\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -1044,7 +1044,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "DEBUG = True\n# ALLOWED_HOSTS = []\n# ALLOWED_HOSTS = ['e-learning-management-backend-test.onrender.com']\nALLOWED_HOSTS = ['*']\nCSRF_TRUSTED_ORIGINS = [\"https://*.onrender.com\", \"http://127.0.0.1:8000\"]\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',",
+        "peekOfCode": "DEBUG = True\n# ALLOWED_HOSTS = []\n# ALLOWED_HOSTS = ['e-learning-management-backend-test.onrender.com']\nALLOWED_HOSTS = ['https://e-learning-management-backend-test.onrender.com']\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
         "detail": "e_learning.settings",
         "documentation": {}
     },
@@ -1053,16 +1053,7 @@
         "kind": 5,
         "importPath": "e_learning.settings",
         "description": "e_learning.settings",
-        "peekOfCode": "ALLOWED_HOSTS = ['*']\nCSRF_TRUSTED_ORIGINS = [\"https://*.onrender.com\", \"http://127.0.0.1:8000\"]\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
-        "detail": "e_learning.settings",
-        "documentation": {}
-    },
-    {
-        "label": "CSRF_TRUSTED_ORIGINS",
-        "kind": 5,
-        "importPath": "e_learning.settings",
-        "description": "e_learning.settings",
-        "peekOfCode": "CSRF_TRUSTED_ORIGINS = [\"https://*.onrender.com\", \"http://127.0.0.1:8000\"]\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rest_framework',",
+        "peekOfCode": "ALLOWED_HOSTS = ['https://e-learning-management-backend-test.onrender.com']\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rest_framework',",
         "detail": "e_learning.settings",
         "documentation": {}
     },
