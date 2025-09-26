@@ -12,10 +12,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 
 from pathlib import Path
 from datetime import timedelta
-import dj_database_url
-from dotenv import load_dotenv
-import os
-load_dotenv()
+from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -25,14 +22,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv('SECRET_KEY')
+SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = config('DEBUG', default=False, cast=bool)
 
-# ALLOWED_HOSTS = []
+ALLOWED_HOSTS = []
 # ALLOWED_HOSTS = ['e-learning-management-backend-test.onrender.com']
-ALLOWED_HOSTS = ['e-learning-management-backend-test.onrender.com']
+# ALLOWED_HOSTS = ['e-learning-management-backend-test.onrender.com']
 
 # Application definition
 
@@ -94,13 +91,17 @@ WSGI_APPLICATION = 'e_learning.wsgi.application'
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
-
 DATABASES = {
-    'default': dj_database_url.parse(
-        os.getenv('DATABASE_URL')
-
-    )
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': config('DB_NAME'),
+        'USER': config('DB_USER'),
+        'PASSWORD': config('DB_PASSWORD'),
+        'HOST': config('DB_HOST'),
+        'PORT': config('DB_PORT'),
+    }
 }
+
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
 
@@ -119,12 +120,12 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-# CORS_ALLOWED_ORIGINS = [
-#     "http://localhost:5173",
-# ]
 CORS_ALLOWED_ORIGINS = [
-    "https://e-learning-management-beige.vercel.app",
+    "http://localhost:5173",
 ]
+# CORS_ALLOWED_ORIGINS = [
+#     "https://e-learning-management-beige.vercel.app",
+# ]
 CORS_ALLOW_CREDENTIALS = True
 
 # Internationalization
@@ -138,9 +139,9 @@ USE_I18N = True
 
 USE_TZ = True
 
-# SITE_URL = 'http://localhost:5173'
-SITE_URL = 'https://e-learning-management-beige.vercel.app'
-STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')
+SITE_URL = 'http://localhost:5173'
+# SITE_URL = 'https://e-learning-management-beige.vercel.app'
+STRIPE_SECRET_KEY = config('STRIPE_SECRET_KEY')
 # settings.py
 REST_FRAMEWORK = {
     'EXCEPTION_HANDLER': 'learning.exceptions.custom_exception_handler',
