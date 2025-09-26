@@ -121,7 +121,7 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",
+   config('FRONTEND_SITE_URL')
 ]
 # CORS_ALLOWED_ORIGINS = [
 #     "https://e-learning-management-beige.vercel.app",
@@ -139,7 +139,7 @@ USE_I18N = True
 
 USE_TZ = True
 
-SITE_URL = 'http://localhost:5173'
+SITE_URL = config('FRONTEND_SITE_URL')
 # SITE_URL = 'https://e-learning-management-beige.vercel.app'
 STRIPE_SECRET_KEY = config('STRIPE_SECRET_KEY')
 # settings.py
